@@ -1,0 +1,107 @@
+2018-10-07 21:27:00,197 [Thread-2:5792] [blog.views:38] [views:index] [ERROR]- page() missing 1 required positional argument: 'number'
+2018-10-07 21:31:07,768 [Thread-8:4112] [blog.views:38] [views:index] [ERROR]- page() missing 1 required positional argument: 'number'
+2018-10-07 21:37:50,900 [Thread-12:4736] [blog.views:38] [views:index] [ERROR]- page() missing 1 required positional argument: 'number'
+2018-10-07 21:38:48,945 [Thread-18:5204] [blog.views:38] [views:index] [ERROR]- page() missing 1 required positional argument: 'number'
+2018-10-07 21:42:04,006 [Thread-7:4788] [blog.views:38] [views:index] [ERROR]- page() missing 1 required positional argument: 'number'
+2018-10-07 21:43:20,548 [Thread-13:2848] [blog.views:38] [views:index] [ERROR]- page() missing 1 required positional argument: 'number'
+2018-10-07 21:46:46,022 [Thread-23:3580] [blog.views:38] [views:index] [ERROR]- page() missing 1 required positional argument: 'number'
+2018-10-08 08:57:14,635 [Thread-4:5916] [blog.views:38] [views:index] [ERROR]- page() missing 1 required positional argument: 'number'
+2018-10-08 18:57:21,140 [Thread-4:4176] [blog.views:38] [views:index] [ERROR]- name 'current_page' is not defined
+2018-10-08 19:16:49,024 [Thread-2:7108] [blog.views:38] [views:index] [ERROR]- name 'page' is not defined
+2018-10-08 21:27:19,847 [Thread-2:2576] [blog.views:43] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 21:29:29,972 [Thread-2:7884] [blog.views:45] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 21:32:20,441 [Thread-4:4368] [blog.views:45] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 21:34:35,003 [Thread-2:5416] [blog.views:45] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 21:35:00,625 [Thread-2:2900] [blog.views:45] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 21:35:10,481 [Thread-4:4672] [blog.views:45] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 21:55:51,810 [Thread-2:1312] [blog.views:43] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 21:56:05,262 [Thread-9:6568] [blog.views:43] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 21:56:55,785 [Thread-2:4744] [blog.views:43] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 21:57:22,670 [Thread-2:7640] [blog.views:43] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 21:58:02,764 [Thread-8:3184] [blog.views:43] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 21:59:21,398 [Thread-2:2240] [blog.views:43] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 21:59:25,733 [Thread-8:6844] [blog.views:43] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 22:00:13,793 [Thread-2:8000] [blog.views:43] [views:index] [ERROR]- 'QuerySet' object has no attribute 'strftime'
+2018-10-08 22:04:39,564 [Thread-2:7392] [blog.views:43] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-08 22:05:11,257 [Thread-2:4308] [blog.views:43] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-08 22:05:14,311 [Thread-8:7612] [blog.views:43] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-08 22:05:27,819 [Thread-2:6424] [blog.views:43] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-08 22:05:40,475 [Thread-2:7240] [blog.views:43] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-08 22:12:18,298 [Thread-2:5116] [blog.views:43] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-08 22:12:57,068 [Thread-8:8056] [blog.views:43] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-08 22:16:57,582 [Thread-2:5860] [blog.views:44] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-09 08:43:09,177 [Thread-4:4740] [blog.views:44] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-09 08:56:49,832 [Thread-14:5640] [blog.views:44] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-09 08:57:55,437 [Thread-36:5424] [blog.views:44] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-09 09:02:54,201 [Thread-42:1448] [blog.views:44] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-09 09:02:59,448 [Thread-48:4284] [blog.views:44] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-09 09:03:03,300 [Thread-54:1452] [blog.views:44] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-09 09:03:09,158 [Thread-60:5124] [blog.views:44] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-09 09:03:12,542 [Thread-66:4920] [blog.views:44] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-09 09:03:14,319 [Thread-72:5152] [blog.views:44] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-09 09:03:15,574 [Thread-78:2816] [blog.views:44] [views:index] [ERROR]- 'locale' codec can't encode character '\u6587' in position 5: Illegal byte sequence
+2018-10-09 09:58:58,293 [Thread-10:5820] [blog.views:63] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-10-09 09:59:40,018 [Thread-11:8100] [blog.views:63] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-10-09 10:06:13,279 [Thread-2:6740] [blog.views:63] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-10-09 10:10:29,673 [Thread-2:6896] [blog.views:63] [views:archive] [ERROR]- Cannot resolve keyword 'date_publish_icontains' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-10-09 10:11:01,026 [Thread-4:6808] [blog.views:63] [views:archive] [ERROR]- Cannot resolve keyword 'date_publish_icontains' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-10-09 10:12:14,267 [Thread-6:6892] [blog.views:63] [views:archive] [ERROR]- Cannot resolve keyword 'date_publish_icontains' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-10-09 10:13:08,766 [Thread-12:6948] [blog.views:63] [views:archive] [ERROR]- Cannot resolve keyword 'date_publish_icontains' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-10-09 10:13:55,670 [Thread-2:6968] [blog.views:65] [views:archive] [ERROR]- Cannot resolve keyword 'date_publish_icontains' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-10-09 10:13:58,934 [Thread-8:4588] [blog.views:65] [views:archive] [ERROR]- Cannot resolve keyword 'date_publish_icontains' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-10-09 10:16:08,411 [Thread-2:7520] [blog.views:68] [views:archive] [ERROR]- Cannot resolve keyword 'date_publish_icontains' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-10-09 10:16:12,211 [Thread-8:5632] [blog.views:68] [views:archive] [ERROR]- Cannot resolve keyword 'date_publish_icontains' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-10-09 10:17:21,067 [Thread-20:6600] [blog.views:68] [views:archive] [ERROR]- Cannot resolve keyword 'date_publish_icontains' into field. Choices are: category, category_id, click_count, comment, content, date_publish, desc, id, is_recommend, tag, title, user, user_id
+2018-10-10 16:33:27,722 [Thread-8:6716] [blog.views:87] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: 'tag_test01'
+2018-10-10 17:26:25,645 [Thread-2:6456] [blog.views:86] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: 'tag_test05'
+2018-10-10 18:02:07,071 [Thread-2:4856] [blog.views:89] [views:tagArticle] [ERROR]- name 'test05' is not defined
+2018-10-10 18:02:15,345 [Thread-8:6296] [blog.views:89] [views:tagArticle] [ERROR]- name 'test05' is not defined
+2018-10-10 20:10:02,451 [Thread-2:5660] [blog.views:89] [views:tagArticle] [ERROR]- name 'tag_id' is not defined
+2018-10-10 20:10:55,730 [Thread-20:6436] [blog.views:89] [views:tagArticle] [ERROR]- name 'tag_id' is not defined
+2018-10-10 20:25:32,331 [Thread-8:6628] [blog.views:89] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-11 09:18:27,995 [Thread-10:4440] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 09:22:09,390 [Thread-9:5020] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 09:26:07,992 [Thread-8:4928] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 09:26:48,819 [Thread-9:4748] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 09:35:07,158 [Thread-8:6152] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 09:47:52,714 [Thread-9:7428] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 09:49:35,455 [Thread-8:4828] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 09:54:05,961 [Thread-26:4544] [blog.views:89] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-11 09:54:17,493 [Thread-32:5844] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:12:38,979 [Thread-9:4252] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:15:33,138 [Thread-24:5956] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:17:07,461 [Thread-26:4412] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:17:09,913 [Thread-27:4260] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:20:34,988 [Thread-2:4556] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:22:29,786 [Thread-4:4512] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:23:42,555 [Thread-6:4300] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:29:30,264 [Thread-8:4744] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:30:25,007 [Thread-16:4296] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:30:38,611 [Thread-24:5792] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:30:55,340 [Thread-26:4228] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:31:15,299 [Thread-34:832] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-11 10:34:42,799 [Thread-2:4556] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-12 09:05:21,245 [Thread-12:5716] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-12 09:14:21,608 [Thread-18:3772] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-12 09:29:22,454 [Thread-4:5920] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-12 09:30:47,669 [Thread-7:5048] [blog.views:115] [views:article] [ERROR]- type object 'Article' has no attribute 'GET'
+2018-10-12 09:33:08,190 [Thread-2:5496] [blog.views:89] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 11:21:17,042 [Thread-10:6136] [blog.views:79] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-10-13 14:47:03,596 [Thread-2:2176] [blog.views:79] [views:archive] [ERROR]- unsupported operand type(s) for +: 'NoneType' and 'str'
+2018-10-13 14:49:37,599 [Thread-2:7224] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 14:56:10,204 [Thread-8:2544] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 14:56:19,357 [Thread-14:6676] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 14:56:42,033 [Thread-20:4884] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 14:57:30,026 [Thread-2:5748] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 15:01:04,047 [Thread-8:7744] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 15:01:15,230 [Thread-15:7244] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 15:01:20,953 [Thread-21:4960] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 15:01:45,157 [Thread-2:6872] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 15:05:44,236 [Thread-2:6976] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 15:20:25,060 [Thread-2:7652] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 15:20:31,541 [Thread-8:5108] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 15:21:20,339 [Thread-14:6176] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 15:29:28,435 [Thread-2:8188] [blog.views:90] [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-10-13 15:45:06,364 [Thread-34:6872] [blog.views:130]             [views:article] [ERROR]- failure.html
+2018-10-14 16:24:26,411 [Thread-13:6244] [blog.views:183]             [views:do_reg] [ERROR]- name 'make_password' is not defined
+2018-10-14 16:24:41,984 [Thread-15:4268] [blog.views:183]             [views:do_reg] [ERROR]- name 'make_password' is not defined
