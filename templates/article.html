@@ -50,23 +50,23 @@
       </ol>
 
     <div id="commentform">
-    <h3 id="respond">亲，留下你的评论吧！</h3>
-    {% if not request.user.is_authenticated %}
-    <div class='login_info'>还没有登陆？可以登录后再评论哦。<b><a href="{% url 'login' %}">&raquo;去登录</a>&nbsp;<a href="{% url 'reg' %}">&raquo;去注册</a></b></div>
-    {% else %}
-        <div class='login_info'>尊敬的用户<b>{{ request.user.username }}</b>,快来写点评论吧!&nbsp;<a href="{% url 'logout' %}" ><div style="color:#0000E3">注销</div></a></div>
-    {% endif %}
-    <form action="{% url 'comment_post' %}" method="post">
-    {% csrf_token %}
-    <p>{{ comment_form.author }}
-    <label for="author">Name (required)</label></p>
-    <p>{{ comment_form.email }}
-    <label for="email">Email (Will NOT be published) (required)</label></p>
-    <p>{{ comment_form.url }}
-    <label for="url">URL</label></p>
-    <p>{{ comment_form.comment }}</p>
-    <p>{{ comment_form.article }}<input name="提交评论" type="submit" id="submit" tabindex="5" value="Submit" class="button" /></p>
-    </form>
+        <h3 id="respond">亲，留下你的评论吧！</h3>
+        {% if not request.user.is_authenticated %}
+            <div class='login_info'>还没有登陆？可以登录后再评论哦。<b><a href="{% url 'login' %}">&raquo;去登录</a>&nbsp;<a href="{% url 'reg' %}">&raquo;去注册</a></b></div>
+        {% else %}
+            <div class='login_info'>尊敬的用户<b>{{ request.user.username }}</b>,快来写点评论吧!&nbsp;<a href="{% url 'logout' %}" ><div style="color:#0000E3">注销</div></a></div>
+        {% endif %}
+        <form action="{% url 'comment_post' %}" method="post">
+            {% csrf_token %}
+            <p>{{ comment_form.author }}
+            <label for="author">Name (required)</label></p>
+            <p>{{ comment_form.email }}
+            <label for="email">Email (Will NOT be published) (required)</label></p>
+            <p>{{ comment_form.url }}
+            <label for="url">URL</label></p>
+            <p>{{ comment_form.comment }}</p>
+            <p>{{ comment_form.article }}<input type="submit" id="submit" tabindex="5" value="提交评论" class="button" /></p>
+        </form>
     </div>
 </div>
 {% endblock left_content %}

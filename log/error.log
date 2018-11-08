@@ -105,3 +105,5 @@
 2018-10-13 15:45:06,364 [Thread-34:6872] [blog.views:130]             [views:article] [ERROR]- failure.html
 2018-10-14 16:24:26,411 [Thread-13:6244] [blog.views:183]             [views:do_reg] [ERROR]- name 'make_password' is not defined
 2018-10-14 16:24:41,984 [Thread-15:4268] [blog.views:183]             [views:do_reg] [ERROR]- name 'make_password' is not defined
+2018-11-02 14:57:12,029 [Thread-2:6352] [blog.views:67]             [views:index] [ERROR]- (1146, "Table 'blog_db.article' doesn't exist")
+2018-11-02 14:59:08,985 [Thread-2:9592] [blog.views:67]             [views:index] [ERROR]- (1146, "Table 'blog_db.article' doesn't exist")

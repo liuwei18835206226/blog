@@ -16,6 +16,7 @@ class User(AbstractUser):
         verbose_name = '用户'
         verbose_name_plural = verbose_name
         ordering = ['-id']
+        db_table = 'user'
 
     def __str__(self):
         return self.username
@@ -27,6 +28,7 @@ class Tag(models.Model):
     class Meta:
         verbose_name = '标签'
         verbose_name_plural = verbose_name
+        db_table = 'tag'
 
     def __str__(self):
         return self.name    # 只能返回字符串类型
@@ -40,6 +42,7 @@ class Category(models.Model):
         verbose_name = '分类'
         verbose_name_plural = verbose_name
         ordering = ['index', 'id']
+        db_table = 'category'
 
     def __str__(self):
         return self.name    # 只能返回字符串类型
@@ -78,6 +81,7 @@ class Article(models.Model):
         verbose_name = '文章'
         verbose_name_plural = verbose_name
         ordering = ['-date_publish']  # 最新发布在前
+        db_table = 'article'
 
     def __str__(self):
         return self.title
@@ -97,6 +101,7 @@ class Comment(models.Model):
     class Meta:
         verbose_name = '评论'
         verbose_name_plural = verbose_name
+        db_table = 'comment'
 
     def __str__(self):
         return str(self.id)
@@ -113,6 +118,7 @@ class Links(models.Model):
         verbose_name = '友情链接'
         verbose_name_plural = verbose_name
         ordering = ['index', 'id']
+        db_table = 'links'
 
     def __str__(self):
         return self.title
@@ -130,6 +136,7 @@ class Ad(models.Model):
         verbose_name = u'广告'
         verbose_name_plural = verbose_name
         ordering = ['index', 'id']
+        db_table = 'ad'
 
     def __str__(self):
         return self.title

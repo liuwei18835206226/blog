@@ -4634,3 +4634,202 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'logout' not found. 'logout' 
 2018-10-19 17:07:12,428 [Thread-64:5096] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
 2018-10-19 17:07:27,073 [Thread-67:3648] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
 2018-10-19 17:11:27,066 [Thread-69:2608] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-02 14:57:12,426 [Thread-2:6352] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\mysql\base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "C:\python365\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\python365\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'blog_db.comment' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 250, in __iter__
+    self._fetch_all()
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 106, in __iter__
+    for row in compiler.results_iter():
+  File "C:\python365\lib\site-packages\django\db\models\sql\compiler.py", line 836, in results_iter
+    results = self.execute_sql(MULTI)
+  File "C:\python365\lib\site-packages\django\db\models\sql\compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "C:\python365\lib\site-packages\django\db\models\sql\compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\python365\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\mysql\base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "C:\python365\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\python365\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'blog_db.comment' doesn't exist")
+2018-11-02 14:57:16,291 [Thread-3:4868] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-02 14:59:08,998 [Thread-2:9592] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\mysql\base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "C:\python365\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\python365\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'blog_db.comment' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 250, in __iter__
+    self._fetch_all()
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 106, in __iter__
+    for row in compiler.results_iter():
+  File "C:\python365\lib\site-packages\django\db\models\sql\compiler.py", line 836, in results_iter
+    results = self.execute_sql(MULTI)
+  File "C:\python365\lib\site-packages\django\db\models\sql\compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "C:\python365\lib\site-packages\django\db\models\sql\compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\python365\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\mysql\base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "C:\python365\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\python365\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'blog_db.comment' doesn't exist")
+2018-11-02 15:01:12,366 [Thread-7:8140] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-02 15:01:13,903 [Thread-12:8264] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-07 19:29:32,356 [Thread-8:4640] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-07 19:29:33,079 [Thread-14:924] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-07 19:29:33,212 [Thread-18:9096] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-07 19:29:33,801 [Thread-32:9900] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-07 19:29:35,679 [Thread-34:3916] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-07 19:32:24,438 [Thread-42:5204] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-07 19:38:18,705 [Thread-44:9688] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-07 19:55:27,928 [Thread-3:8428] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-07 20:13:17,367 [Thread-10:5204] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-07 20:13:17,439 [Thread-11:9408] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-07 20:55:54,825 [Thread-13:924] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-07 20:58:59,164 [Thread-15:10500] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-07 20:59:04,195 [Thread-17:8364] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-07 21:00:13,994 [Thread-19:10976] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-07 21:02:00,410 [Thread-21:10384] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-07 21:03:17,056 [Thread-23:10852] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
