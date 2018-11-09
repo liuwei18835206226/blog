@@ -20,7 +20,7 @@ from django import views
 # from myBlog.upload import upload_image
 
 urlpatterns = [
-    url(r"^uploads/(?P<path>.*)$",views.static.serve,{"document_root":settings.MEDIA_ROOT}),  # 此处django1.10版本中views视图函数的语法出现了变化
+    # url(r"^uploads/(?P<path>.*)$",views.static.serve,{"document_root":settings.MEDIA_ROOT}),  # 此处django1.10版本中views视图函数的语法出现了变化
     # url(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'),
     url(r'^admin/', admin.site.urls),
     url(r'^',include('myBlog.urls')),

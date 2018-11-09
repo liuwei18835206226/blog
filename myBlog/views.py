@@ -97,7 +97,7 @@ def tagArticle(request):
 
 # 分页
 def getPage(request,article_list):
-    p = Paginator(article_list, 2)  # 分页
+    p = Paginator(article_list, 5)  # 分页
     try:
         current_page = int(request.GET.get('page', 1))  # 如果没有找到当前 page ，返回 1
         article_list = p.page(current_page)
@@ -113,6 +113,11 @@ def article(request):
         try:
             # 获取文章信息
             article = Article.objects.get(pk=id)
+            if not request.COOKIES.get('click_count_%s' % id): # 获取 cookie，看cookie中是否有此文章的阅读信息，如果没有，+1
+                article.click_count += 1    # 记录阅读数
+                article.save()
+            previous_article = Article.objects.filter(date_publish__gt=article.date_publish).last() # 筛选发布日期大于当前请求日期的文章，并选出最后一个
+            next_article = Article.objects.filter(date_publish__lt=article.date_publish).first() # 筛选发布日期小于当前请求日期的文章，并选出第一个
         except Article.DoesNotExist:
             return render(request,'failure.html',{'reason':'没有找到相应的文章'})
 
@@ -137,7 +142,9 @@ def article(request):
 
     except Exception as e:
         logger.error(e)
-    return render(request,'article.html',locals())
+    response = render(request,'article.html',locals())
+    response.set_cookie('click_count_%s' % id ,'true',max_age=60)  # set_cookie(key,value,max_age) max_age单位为s ，不设置的话，默认关闭浏览器cookie失效
+    return response
 
 # 提交评论
 # 如果此处安全性无关紧要，可取消 csrf 验证,去掉 html里的{% csrf_token %},此处加个装饰器 @csrf_exemp

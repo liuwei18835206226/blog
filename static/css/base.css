@@ -1,5 +1,5 @@
-
-/* 共用css */
+@charset "utf-8";
+/* 鹿虏脫脙css */
 * { margin: 0; padding: 0 }
 body { font: 12px/1.5 'Microsoft Yahei', 'Simsun'; color: #666666; background: #fff }
 img { border: 0; display: block }
@@ -14,29 +14,29 @@ a:hover { text-decoration: none; }
 .f_r { float: right }
 .l_box { width: 670px; }
 .r_box { width: 300px; }
-/* 头部信息 */
+/* 脥路虏驴脨脜脧垄 */
 header { width: 1000px; margin: 20px auto; overflow: hidden; clear: both; }
 #topnav { width: 100%; background: #48AE15; height: 46px; line-height: 46px; text-align: left; border-radius: 46px; }
 #topnav ul{ margin-left:50px; }
 #topnav a { display: inline-block; font-size: 18px; font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif; padding: 0 20px; }
 #topnav a:hover { background: #fff; color: #000; }
 #topnav a { color: #FFF }
-#topnav_current { background: #F3FF41; }/* 高亮选中颜色 */
+#topnav_current { background: #F3FF41; }/* 赂脽脕脕脩隆脰脨脩脮脡芦 */
 a#topnav_current { color: #000 }
 article { width: 1000px; margin: 20px auto; }
 /*footer*/
 footer { background: #333; width: 100%; clear: both; text-align: center; }
 .ft-copyright { color: #fff; line-height: 24px; }
 .ft-list { background: url(../images/ft-wx-s.png) no-repeat right; height: 100px }
-/*返回顶部*/
-*html { background-image: url(about:blank); background-attachment: fixed; }/*解决IE6下滚动抖动的问题*/
+/*路碌禄脴露楼虏驴*/
+*html { background-image: url(about:blank); background-attachment: fixed; }/*陆芒戮枚IE6脧脗鹿枚露炉露露露炉碌脛脦脢脤芒*/
 #tbox { width: 54px; float: right; position: fixed; right: 50px; bottom: 15px; _position: absolute; _bottom: auto; _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)));
-_margin-bottom: 15px; }/*解决IE6下不兼容 position:fixed 的问题*/
+_margin-bottom: 15px; }/*陆芒戮枚IE6脧脗虏禄录忙脠脻 position:fixed 碌脛脦脢脤芒*/
 #togbook, #gotop { width: 54px; height: 56px; display: block; background: url(../images/icons.png) no-repeat #111; box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); border-radius: 6px; }
 #togbook { margin: 5px 0; background-position: 10px -36px; }
 #gotop { background-position: 12px 10px; }
 #togbook:hover, #gotop:hover { opacity: 0.5 }
-/*标签云*/
+/*卤锚脟漏脭脝*/
 .cloud { width: 100%; clear: both; overflow: hidden }
 .cloud h3 { line-height: 40px; color: #38485A; font-size: 18px; border-bottom: 1px solid #E6E6E6; height: 40px; }
 .cloud ul { margin: 20px 0 }
@@ -53,33 +53,34 @@ _margin-bottom: 15px; }/*解决IE6下不兼容 position:fixed 的问题*/
 .cloud ul li:first-child { background: #036564 }
 .cloud ul li:last-child { background: #3299BB }
 .cloud ul li:hover { border-radius: 0; text-shadow: #000 1px 1px 1px }
-/* 切换卡 */
+/* 脟脨禄禄驴篓 */
 .moreSelect { width: 100%; margin: 30px 0 20px 0; overflow: hidden }
 .ms-top { height: 32px; border-bottom: solid 1px #EAEAEA; font-size: 14px }
 #tab li a { float: left; height: 32px; cursor: pointer; line-height: 32px; list-style-type: none; padding: 0 15px; }
 #tab li.cur a { color: #fff; background: #f77825; }
 .bd { display: none }
-.bd-news ul { padding: 10px 0 0 10px; background: url(../images/ph2.png) no-repeat 10px 29px; }
-.bd-news ul li { border-bottom: solid 1px #EAEAEA; line-height: 30px; height: 30px; overflow: hidden; font-size: 14px; padding: 10px 0 0 30px; }
+.bd-news ul { padding: 10px 0 0 10px; background: url(../images/ph2.png) no-repeat 10px 29px; overflow:scroll;}
+.bd-news ul li { border-bottom: solid 1px #EAEAEA; line-height: 30px; height: 30px; overflow:hidden ; font-size: 14px; padding: 10px 0 0 30px; }
 .bd-news ul li a { display: block; }
 .bd-news ul li a:hover { color: #000; }
-.bd-news ul li:hover { border-bottom: #000 1px solid; }/* 鼠标放上去的效果 */
+.bd-news ul li:hover { border-bottom: #000 1px solid; }/* 脢贸卤锚路脜脡脧脠楼碌脛脨搂鹿没 */
 .logo{ margin-bottom:20px; padding-left:10px; }
-.logo h1{ font-size:30px; font-weight:blod; }
+.logo h1{ font-size:30px; font-weight:bold; }
 .font-size-18{ font-size:18px; }
 
-/*分页效果*/
+/*路脰脪鲁脨搂鹿没*/
 #pagination{ float:right; margin:10px 0; }
 #pagination-flickr li { border:0; margin:0; padding:0; font-size:11px; list-style:none; /* savers */ float:left; }
 #pagination-flickr a { border:solid 1px #DDDDDD; margin-right:2px; }
-#pagination-flickr .previous-off,#pagination-flickr .next-off { color:#666666; display:block; float:left; font-weight:bold; padding:3px 4px; }
+#pagination-flickr .previous-off,#pagination-flickr .next-off { color:#666666; display:block; float:left; font-weight:bold; padding:4px 4px; }
 #pagination-flickr .next a,#pagination-flickr .previous a { font-weight:bold; border:solid 1px #FFFFFF; }	
 #pagination-flickr .active { color:#ff0084; font-weight:bold; display:block; float:left; padding:4px 6px; }
 #pagination-flickr a:link, 
 #pagination-flickr a:visited { color:#0063e3; display:block; float:left; padding:3px 6px; text-decoration:none; }
 #pagination-flickr a:hover { border:solid 1px #000; background:#0063DC; color:#FFF; }
+#pagination-flickr .first a,#pagination-flickr .last a { padding:3px 4px;  }
 
-/*文章详情*/
+/*脦脛脮脗脧锚脟茅*/
 .postdate{float: left;display: block;background: url(../images/date.gif) no-repeat;height: 48px;width: 48px;line-height: 160%; margin-left: 10px; margin-right: 10px;}
 .month{text-transform: uppercase;text-align: center;color: #fcfff5;font-size: 12px;}
 .date{text-align: center;margin-top: 2px;font-size: 18px;}
@@ -87,9 +88,10 @@ _margin-bottom: 15px; }/*解决IE6下不兼容 position:fixed 的问题*/
 .postmeta_category{background: url(../images/category.gif) no-repeat;padding: 0 5px 0 18px;}
 .postmeta_comments{background: url(../images/comments.gif) no-repeat;padding-left: 18px;}
 .postmeta_author{background: url(../images/author.gif) no-repeat;padding: 0 5px 0 18px;}
-.postmeta_time{background: url(../images/time.gif) no-repeat;padding-left: 18px;}
+.postmeta_time{background: url(../images/time.gif) no-repeat;padding: 0 5px 0 18px;}
 .postmeta_category a{color: #666666;}
 .postmeta_comments a{color: #666666;}
+.postmeta_clickcount{background: url(../images/newsbg04.png) no-repeat;padding-left:18px;}
 .title{height: 48px;}
 .title h2{line-height: 120%;}
 .title h2 a{color: #3e606f;font-size: 20px;line-height: 140%;}
@@ -98,6 +100,7 @@ _margin-bottom: 15px; }/*解决IE6下不兼容 position:fixed 的问题*/
 .entry {
 	margin: 20px 0 5px 0;
 	margin-left: 10px;
+    margin-right: 100px;
 	padding-bottom: 5px;
 	border-bottom: 1px dashed #cccccc;
 }
@@ -135,6 +138,8 @@ _margin-bottom: 15px; }/*解决IE6下不兼容 position:fixed 的问题*/
 	padding: 10px 0;
 	color: #666666;
 	margin-left: 10px;
+	margin-right: 100px;
+	border-bottom: 1px dashed #cccccc;
 }
 
 .info a{
@@ -153,8 +158,9 @@ _margin-bottom: 15px; }/*解决IE6下不兼容 position:fixed 的问题*/
 
 h3 {
 	color: #3e606f;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 130%;
+	padding-left: 10px;
 }
 
 .commentstitle h3 {
@@ -220,6 +226,7 @@ h3 {
 #respond {
 	font-size: 18px;
 	color: #3e606f;
+	margin-left: 10px;
 	margin-bottom: 15px;
 	margin-top: 10px;
 }
@@ -269,3 +276,10 @@ input#submit {
 .reply{
 	padding-left:30px;
 }
+
+.article-more{
+    padding-left: 10px;
+}
+
+
+

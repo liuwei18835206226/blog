@@ -107,3 +107,12 @@
 2018-10-14 16:24:41,984 [Thread-15:4268] [blog.views:183]             [views:do_reg] [ERROR]- name 'make_password' is not defined
 2018-11-02 14:57:12,029 [Thread-2:6352] [blog.views:67]             [views:index] [ERROR]- (1146, "Table 'blog_db.article' doesn't exist")
 2018-11-02 14:59:08,985 [Thread-2:9592] [blog.views:67]             [views:index] [ERROR]- (1146, "Table 'blog_db.article' doesn't exist")
+2018-11-09 14:50:50,449 [Thread-2:6696] [blog.views:144]             [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'COOOKIES'
+2018-11-09 14:52:19,368 [Thread-7:6644] [blog.views:144]             [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'COOOKIES'
+2018-11-09 14:53:42,289 [Thread-4:5012] [blog.views:144]             [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'COOOKIES'
+2018-11-09 14:56:20,232 [Thread-6:500] [blog.views:144]             [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'COOOKIES'
+2018-11-09 14:57:44,996 [Thread-12:4440] [blog.views:144]             [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'COOOKIES'
+2018-11-09 14:58:23,851 [Thread-14:1676] [blog.views:144]             [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'COOOKIES'
+2018-11-09 14:59:59,731 [Thread-2:7788] [blog.views:144]             [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'COOOKIES'
+2018-11-09 15:02:51,523 [Thread-8:6640] [blog.views:144]             [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'COOOKIES'
+2018-11-09 16:42:15,785 [Thread-7:4796] [blog.views:67]             [views:index] [ERROR]- invalid literal for int() with base 10: ''

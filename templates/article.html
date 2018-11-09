@@ -14,6 +14,7 @@
           <span class="postmeta_author">{{ article.user.username }}</span>
           <span class="postmeta_category"><a href="" rel="category">{{ article.category.name }}</a></span>
           <span class="postmeta_time">{{ article.date_publish | date:'Y-m-d' }}</span>  <!--date 过滤器-->
+          <span class="postmeta_clickcount">浏览（<a href="/">{{ article.click_count }}</a>）</span>
         </div>
     </div>
     <div class="entry">
@@ -27,12 +28,30 @@
     <div class="info">
         Address: <a href="{{ SITE_URL }}article/?id={{ article.id }}" rel="bookmark" title="{{ article.title }}">{{ SITE_URL }}article/?id={{ article.id }}</a>
     </div>
-    <div class="commentstitle"><h3 id="comments"><span class="commentsnumber">only 1 comment</span> untill now</h3></div>
+
+    <div class="article-more">
+        <p>上一篇：
+            {% if previous_article %}
+            <a href="{% url 'article'%}?id={{ previous_article.id }}">{{ previous_article.title }}</a>
+            {% else %}
+            没有上一篇了哦~
+            {% endif %}
+        </p>
+        <p>下一篇：
+            {% if next_article %}
+            <a href="{% url 'article'%}?id={{ next_article.id }}">{{ next_article.title }}</a>
+            {% else %}
+            没有下一篇了哦~
+            {% endif %}
+        </p>
+    </div>
+
+    <div class="commentstitle"><h3 id="comments">总共有&nbsp<span class="commentsnumber">{{ article.comment_set.all.count }}</span>&nbsp条评论</h3></div>
       <ol class="commentlist">
           {% for comment in comment_list %}
           <li id="comment-59418">
             <div class="top"><a href='{{ comment.url }}' rel='external nofollow' class='url'>{{ comment.username }}</a><span class="time"> @ <a href="#comment-59418" title="">{{ comment.date_publish | date:'Y-m-d H:i:s' }}</a></span></div>
-            <div><img alt='' src='{% static 'images/default.jpg' %}' class='avatar avatar-32 photo' height='32' width='32' /></div>
+            <div><img alt='' src='{% static "images/default.jpg" %}' class='avatar avatar-32 photo' height='32' width='32' /></div>
             <div class="body">
                 <p>{{ comment.content }}</p>
             </div>
@@ -54,7 +73,7 @@
         {% if not request.user.is_authenticated %}
             <div class='login_info'>还没有登陆？可以登录后再评论哦。<b><a href="{% url 'login' %}">&raquo;去登录</a>&nbsp;<a href="{% url 'reg' %}">&raquo;去注册</a></b></div>
         {% else %}
-            <div class='login_info'>尊敬的用户<b>{{ request.user.username }}</b>,快来写点评论吧!&nbsp;<a href="{% url 'logout' %}" ><div style="color:#0000E3">注销</div></a></div>
+            <div class='login_info'>尊敬的用户&nbsp<b>{{ request.user.username }}</b> ,&nbsp快来写点评论吧!&nbsp;<a href="{% url 'logout' %}" ><div style="color:#0000E3">注销</div></a></div>
         {% endif %}
         <form action="{% url 'comment_post' %}" method="post">
             {% csrf_token %}
