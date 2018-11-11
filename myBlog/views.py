@@ -224,5 +224,18 @@ def do_logout(request):
     return redirect(request.META['HTTP_REFERER'])
 
 
+def shuoshuo(request):
+    return render(request,'myBlog/shuoshuo.html')
+def blog(request):
+    return render(request,'myBlog/blog.html')
+def photos(request):
+    return render(request,'myBlog/photos.html')
+def message(request):
+    return render(request,'myBlog/message.html')
+def aboutme(request):
+    return render(request,'myBlog/aboutme.html')
+
+
+
 
 

@@ -11,20 +11,22 @@
     <div class="title">
         <h2><a href="" rel="bookmark" title="{{ article.title }}">{{ article.title }}</a></h2>
         <div class="postmeta">
-          <span class="postmeta_author">{{ article.user.username }}</span>
-          <span class="postmeta_category"><a href="" rel="category">{{ article.category.name }}</a></span>
-          <span class="postmeta_time">{{ article.date_publish | date:'Y-m-d' }}</span>  <!--date 过滤器-->
-          <span class="postmeta_clickcount">浏览（<a href="/">{{ article.click_count }}</a>）</span>
+          <span class="postmeta_author">作者：{{ article.user.username }}</span>
+          <span class="postmeta_category">类别：<a href="" rel="category">{{ article.category.name }}</a></span>
+          <span class="postmeta_time">发布时间：{{ article.date_publish | date:'Y-m-d' }}</span>  <!--date 过滤器-->
+          <span class="postmeta_clickcount">浏览量：（<a href="/">{{ article.click_count }}</a>）</span>
         </div>
     </div>
     <div class="entry">
       {{ article.content | safe }}  <!--safe 过滤器-->
     </div>
+    {% for tag in article.tag.all %}
     <span class="tags">
-        {% for tag in article.tag.all %}
+
         <a href="?tag={{ tag.name }}" rel="tag">{{ tag.name }}</a>
-        {% endfor %}
+
     </span>
+    {% endfor %}
     <div class="info">
         Address: <a href="{{ SITE_URL }}article/?id={{ article.id }}" rel="bookmark" title="{{ article.title }}">{{ SITE_URL }}article/?id={{ article.id }}</a>
     </div>

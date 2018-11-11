@@ -1,0 +1,119 @@
+{% load staticfiles %}
+
+<!--打赏-->
+    <link type="text/css" rel="stylesheet" href="/static/css/myRewards.css">
+
+    <script>
+        window.tctipConfig = {
+            //最上面的文字
+            headText: "欢迎访问我的小站",
+            //侧边栏文本
+            siderText: "站内公告",
+            //侧边栏文本高度调整
+            siderTextTop: "-72px",
+            //侧边栏背景颜色
+            siderBgcolor: "#0a609e",
+            //整个侧边栏的高度设置
+            siderTop:"118px",
+            //底部文字
+            buttomText:"了解更多",
+            //底部文字链接
+            buttomLink:"https://github.com/liuwei18835206226/blog",
+            //显示列表
+            list:{
+                notice: {name:"公告栏", className:"myR-on",
+                         icon: "/static/images/tip.png",
+                         text: '网站建设中...'
+                        },
+                alipay: {name:"xx", desc: "......",
+                         icon: "/static/images/alipay.png",
+                         qrimg: "/static/images/alipay.jpg"
+                        },
+                weixin: {name:"xx", desc: "......",
+                         icon: "/static/images/weixin.png",
+                         qrimg: "/static/images/weixin.jpg"
+                        }
+            }
+        };
+    </script>
+    <script src="/static/js/tctip.min.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            //滚动事件
+            $(window).scroll(function(){
+                var top=$(window).scrollTop();
+                var navbar = $(".navbar-fixed-top");
+
+                if(top==0){
+                    $(".navbar-fixed-top").removeClass("navbar-down");
+                }else{
+                    $(".navbar-fixed-top").addClass("navbar-down");
+                }
+
+                if(top>350){
+                    $("#scrolltop").fadeIn();
+                }else{
+                    $("#scrolltop").fadeOut();
+                }
+            });
+
+            //点击返回头部效果
+            $("#scrolltop").click(function(){
+                $("html,body").animate({scrollTop:0});
+            });
+
+            //窗体改变大小事件
+            $(window).resize(function(){
+                //正文高度
+                var body_height = $(document.body).outerHeight(true);
+
+                //底部元素高度
+                var bottom_height = $("#footer").outerHeight(true);
+
+                //浏览器页面高度
+                var window_height = $(window).height();
+
+                //判断并调整底部元素的样式
+                if($("#footer").hasClass('page-bottom-abs')){
+                    if(body_height + bottom_height >= window_height){
+                        $("#footer").removeClass('page-bottom-abs');
+                    }
+                }else{
+                    if(body_height < window_height){
+                        $("#footer").addClass('page-bottom-abs');
+                    }
+                }
+            });
+
+            //页面加载时，模拟触发一下resize事件
+            $(window).trigger('resize');
+
+            //检查登录状态和获取公告
+            var user_menu = '<li><a href="/user/login_page">登录/注册</a></li>';
+            $.ajax({
+                type:"GET",
+                url:"/user/check_is_login",
+                cache:false,
+                dataType:'json',
+                success:function(data){
+                    var notice;
+                    if(data['code']=='0'){
+                        user_menu = data['user_menu'];
+                        notice = data['notice'];
+                    }else{
+
+                        notice='暂无公告';
+                    };
+
+                    //$("#user_part").html(user_menu);
+                    $('.myRewards-text').html(notice);
+                    tctipConfig.list.notice.text=notice;
+                },
+                error:function(XMLHttpRequest, textStatus, errorThrown){
+                    $("#user_part").html(user_menu);
+                }
+            });
+        });
+    </script>
+

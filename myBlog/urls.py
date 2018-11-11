@@ -10,6 +10,12 @@ urlpatterns = [
     url(r'^logout$', do_logout, name='logout'),
     url(r'^reg', do_reg, name='reg'),
     url(r'^login', do_login, name='login'),
+    url(r'^shuoshuo', shuoshuo, name='shuoshuo'),
+    url(r'^blog', blog, name='blog'),
+    url(r'^photos', photos, name='photos'),
+    url(r'^message', message, name='message'),
+    url(r'^aboutme', aboutme, name='aboutme'),
+
 ]
 
 

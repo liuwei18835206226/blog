@@ -64,7 +64,8 @@ _margin-bottom: 15px; }/*½â¾öIE6ÏÂ²»¼æÈÝ position:fixed µÄÎÊÌâ
 .bd-news ul li a { display: block; }
 .bd-news ul li a:hover { color: #000; }
 .bd-news ul li:hover { border-bottom: #000 1px solid; }/* Êó±ê·ÅÉÏÈ¥µÄÐ§¹û */
-.logo{ margin-bottom:20px; padding-left:10px; }
+.logo{ margin-bottom:10px; padding-left:10px; width:50%; display:inline-block; float:left; }
+.logo_a{ margin-top:37px; padding-right:10px; display:inline-block; float:right;}
 .logo h1{ font-size:30px; font-weight:bold; }
 .font-size-18{ font-size:18px; }
 
@@ -283,3 +284,20 @@ input#submit {
 
 
 
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
