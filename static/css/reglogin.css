@@ -80,13 +80,14 @@ form{
 .right-form li{
 	display:block;
 	color:#4D4949;
-	border:1px solid #EBEBEB;
+	border:2px solid #f0f0f0;
 	border-radius: 0.3em;
 	-webkit-border-radius:0.3em;
   	-moz-border-radius:0.3em;
  	 -o-border-radius:0.3em;
  	 margin-bottom: 10px;
 }
+
 .right-form input[type=text], input[type=password] {
 	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width:90%;
@@ -95,8 +96,13 @@ form{
 	font-size: 15px;
 	border:none;
   	outline:none;
-
 }
+
+.right-form #submit {
+    float:right;background:#c8c8c8;
+}
+
+
 .left-form li{
 	display:block;
 	color:#4D4949;
@@ -525,4 +531,15 @@ input[type=checkbox].css-checkbox10:checked + label i.css-label10 {
 	margin: 7px 5px 9px 0px;
 	}
 }
+
+.login_reg {
+    color:#0000FF;
+}
+
+.form_reg {
+    onfocus:this.placeholder='';
+    onblur:this.placeholder='请输入3-20位用户名';
+}
+
+
 /*----//end-responsive design-----*/

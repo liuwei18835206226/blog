@@ -9,13 +9,13 @@
 <body>
 	<div class="main">
 		<div class="header" >
-			<h1>Create a Free Account!</h1>
+			<h1>免费创建账号!</h1>
 		</div>
 		<p></p>
 			<form action="{% url 'reg' %}" method="post">
                 {% csrf_token %}
 				<ul class="left-form">
-					<h2>New Account:</h2>
+					<h2>新用户：</h2>
 					<li>
 						{{ reg_form.username }}
 						<div class="clear"> </div>
@@ -23,17 +23,18 @@
 					<li>
 						{{ reg_form.email }}
 						<div class="clear"> </div>
-					</li> 
+					</li>
+
 					<li>
 						{{ reg_form.url }}
 						<div class="clear"> </div>
-					</li> 
+					</li>
 					<li>
                         {{ reg_form.password }}
 						<div class="clear"> </div>
 					</li>
                     <input type="hidden" name="source_url" value="{{ request.META.HTTP_REFERER }}">
-					<input type="submit" value="Create And Login">
+					<input type="submit" value="创建并登陆">
 					<div class="clear"> </div>
 				</ul>
 				<div class="clear"> </div>

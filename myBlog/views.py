@@ -1,7 +1,7 @@
 import logging
 from django.shortcuts import render,redirect
 from django.template.response import TemplateResponse
-from django.http import HttpResponse,HttpResponseNotFound
+from django.http import HttpResponse,HttpResponseNotFound,JsonResponse
 from django.conf import settings
 from .models import *
 from django.core.paginator import Paginator,PageNotAnInteger,InvalidPage,EmptyPage
@@ -128,7 +128,7 @@ def article(request):
                                     'article': id} if request.user.is_authenticated() else{'article': id})
 
         # 获取评论信息
-        comments = Comment.objects.filter(article=article).order_by('id')
+        comments = Comment.objects.filter(article=article)
         comment_list = []
         for comment in comments:
             for item in comment_list:
@@ -149,22 +149,34 @@ def article(request):
 # 提交评论
 # 如果此处安全性无关紧要，可取消 csrf 验证,去掉 html里的{% csrf_token %},此处加个装饰器 @csrf_exemp
 def comment_post(request):
-    try:
+    # try:
         comment_form = CommentForm(request.POST)
+        data = {} # 记录返回数据
         if comment_form.is_valid():
             #获取表单信息
             comment = Comment.objects.create(username=comment_form.cleaned_data["author"],
                                              email=comment_form.cleaned_data["email"],
                                              url=comment_form.cleaned_data["url"],
-                                             content=comment_form.cleaned_data["comment"],
+                                             content=comment_form.cleaned_data["text"],
                                              article_id=comment_form.cleaned_data["article"],
                                              user=request.user if request.user.is_authenticated() else None)    # 判断是否已经登录
             comment.save()
+
+            # 返回数据
+            data['status'] = 'SUCCESS'
+            data['username'] = comment.user.username
+            data['comment_time'] = comment.date_publish.strftime('%Y-%m-%d %H:%M:%S')
+            data['text'] = comment.content
+            data['message'] = ''
         else:
-            return render(request, 'failure.html', {'reason': comment_form.errors})
-    except Exception as e:
-        logger.error(e)
-    return redirect(request.META['HTTP_REFERER'])
+            # return render(request, 'failure.html', {'reason': comment_form.errors})
+            data['status'] = 'ERROR'
+            data['message'] = list(comment_form.errors.values())[0][0]
+        return JsonResponse(data)
+    # except Exception as e:
+    #     logger.error(e)
+    # return redirect(request.META['HTTP_REFERER'])
+
 
 # 注册
 def do_reg(request):
@@ -206,7 +218,7 @@ def do_login(request):
                     login(request, user)
                 else:
                     return render(request, 'failure.html', {'reason': '登录验证失败'})
-                return redirect(request.POST.get('source_url'))
+                return redirect(request.POST.get('source_url')) # 重定向到登录前页面
             else:
                 return render(request, 'failure.html', {'reason': login_form.errors})
         else:

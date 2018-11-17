@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* ¹²ÓÃcss */
+/*  */
 * { margin: 0; padding: 0 }
 body { font: 12px/1.5 'Microsoft Yahei', 'Simsun'; color: #666666; background: #fff }
 img { border: 0; display: block }
@@ -19,7 +19,7 @@ header { width: 1000px; margin: 20px auto; overflow: hidden; clear: both; }
 #topnav { width: 100%; background: #48AE15; height: 46px; line-height: 46px; text-align: left; border-radius: 46px; }
 #topnav ul{ margin-left:50px; }
 #topnav a { display: inline-block; font-size: 18px; font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif; padding: 0 20px; }
-#topnav a:hover { background: #fff; color: #000; }
+#topnav a:hover { background: #fff; opacity: 0.3; color: #000; transition: all 0.4s ease-in-out 0s; font-weight:bold;}
 #topnav a { color: #FFF }
 #topnav_current { background: #F3FF41; }/* ¸ßÁÁÑ¡ÖÐÑÕÉ« */
 a#topnav_current { color: #000 }
@@ -64,7 +64,7 @@ _margin-bottom: 15px; }/*½â¾öIE6ÏÂ²»¼æÈÝ position:fixed µÄÎÊÌâ
 .bd-news ul li a { display: block; }
 .bd-news ul li a:hover { color: #000; }
 .bd-news ul li:hover { border-bottom: #000 1px solid; }/* Êó±ê·ÅÉÏÈ¥µÄÐ§¹û */
-.logo{ margin-bottom:10px; padding-left:10px; width:50%; display:inline-block; float:left; }
+.logo{ margin-bottom:10px; padding-left:10px; width:50%; display:inline-block; float:left; color:#000; font-family:'YouYuan'}
 .logo_a{ margin-top:37px; padding-right:10px; display:inline-block; float:right;}
 .logo h1{ font-size:30px; font-weight:bold; }
 .font-size-18{ font-size:18px; }
@@ -157,14 +157,14 @@ _margin-bottom: 15px; }/*½â¾öIE6ÏÂ²»¼æÈÝ position:fixed µÄÎÊÌâ
 	border-top: 1px solid #e3e5e4;
 }
 
-h3 {
+h5 {
 	color: #3e606f;
 	font-size: 14px;
 	line-height: 130%;
 	padding-left: 10px;
 }
 
-.commentstitle h3 {
+.commentstitle h5 {
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
@@ -184,6 +184,11 @@ h3 {
 	font-size: 12px;
 }
 
+# comment_area {
+    margin-top:10px;
+    overflow:hidden;
+}
+
 .commentlist {
 	color: #666666;
 	list-style-type: none;
@@ -201,7 +206,12 @@ h3 {
 
 .commentlist li {
 	border-bottom: 1px solid #e3e5e4;
-	padding: 15px 5px 30px 5px;
+	padding: 10px 5px 10px 5px;
+}
+
+#no_comment {
+    text-align: center;
+    display:block;
 }
 
 .alt {
@@ -230,6 +240,15 @@ h3 {
 	margin-left: 10px;
 	margin-bottom: 15px;
 	margin-top: 10px;
+	text-align:center;
+}
+
+#comment_form {
+    marginBottom:20px;
+}
+
+#comment_form p{
+    marginBottom:20px;
 }
 
 #commentform p {
@@ -301,3 +320,10 @@ input#submit {
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.django-ckeditor-widget {
+    width:100%;
+}
+
+

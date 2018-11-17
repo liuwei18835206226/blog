@@ -9,21 +9,21 @@
 <body>
 	<div class="main">
 		<div class="header" >
-			<h1>Login!</h1>
+			<h1>欢迎登录！</h1>
 		</div>
 		<p></p>
 			<form action="{% url 'login' %}" method="post">
                 {% csrf_token %}
 				<ul class="right-form">
-					<h2>Login:</h2>
-					<li><input type="text" name="username" placeholder="Username" required/></li>
-					<li><input type="password" name="password" placeholder="Password" required/></li>
+					<li><input type="text" name="username" placeholder="用户名" onfocus="this.placeholder=''" onblur="this.placeholder='用户名'" required/></li>
+					<li><input type="password" name="password" placeholder="密码" onfocus="this.placeholder=''" onblur="this.placeholder='密码'" required/></li>
 					<input type="hidden" name="source_url" value="{{ request.META.HTTP_REFERER }}">
-                    <input type="submit" value="Login" >
+                    <li><input id='modify'  type="text" placeholder="请输入验证码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入验证码'" ></li>
+                    <input id='submit'  type="submit" value="登录" >
 					<div class="clear"> </div>
+                    <div>还没有账号？点击这里<a href="reg.html" class="login_reg">注册</a></div>
 				</ul>
 				<div class="clear"> </div>
-
 			</form>
 	</div>
 </body>

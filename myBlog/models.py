@@ -21,7 +21,6 @@ class User(AbstractUser):
     def __str__(self):
         return self.username
 
-
 class Tag(models.Model):
     name = models.CharField(max_length=30,verbose_name='标签名称')
 
@@ -70,8 +69,8 @@ class Article(models.Model):
     click_count = models.IntegerField(default=0, verbose_name='点击次数')
     is_recommend = models.BooleanField(default=False, verbose_name='是否推荐')
     date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
-    user = models.ForeignKey(User, verbose_name='用户',on_delete=models.CASCADE)
-    category = models.ForeignKey(Category, blank=True, null=True, verbose_name='分类',on_delete=models.CASCADE)
+    user = models.ForeignKey(User, verbose_name='用户',on_delete=models.DO_NOTHING)  # on_delete 删除时的动作,cascade级联删除，do_nothing不删除从表
+    category = models.ForeignKey(Category, blank=True, null=True, verbose_name='分类',on_delete=models.DO_NOTHING)
     tag = models.ManyToManyField(Tag, verbose_name='标签')
 
     # 这里使用自定义管理器处理数据，而不使用原生的 objects
@@ -94,14 +93,18 @@ class Comment(models.Model):
     email = models.EmailField(max_length=50, blank=True, null=True, verbose_name='邮箱地址')
     url = models.URLField(max_length=100, blank=True, null=True, verbose_name='个人网页地址')
     date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
-    user = models.ForeignKey(User, blank=True, null=True, verbose_name='用户',on_delete=models.CASCADE)
-    article = models.ForeignKey(Article, blank=True, null=True, verbose_name='文章',on_delete=models.CASCADE)
-    pid = models.ForeignKey('self', blank=True, null=True, verbose_name='父级评论',on_delete=models.CASCADE)
+    user = models.ForeignKey(User, related_name='comments',blank=True, null=True, verbose_name='用户',on_delete=models.DO_NOTHING)
+    article = models.ForeignKey(Article, blank=True, null=True, verbose_name='文章',on_delete=models.DO_NOTHING)
+
+    # root = models.ForeignKey('self',null=True,related_name='root_comment',verbose_name='顶级评论',on_delete=models.DO_NOTHING)
+    pid = models.ForeignKey('self', blank=True, related_name='parent_comment',null=True, verbose_name='父级评论',on_delete=models.DO_NOTHING)
+    # reply_to = models.ForeignKey(User,related_name='replies',null=True,verbose_name='回复对象exit',on_delete=models.DO_NOTHING)
 
     class Meta:
         verbose_name = '评论'
         verbose_name_plural = verbose_name
         db_table = 'comment'
+        ordering = ['-date_publish']
 
     def __str__(self):
         return str(self.id)

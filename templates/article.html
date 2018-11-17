@@ -14,7 +14,7 @@
           <span class="postmeta_author">作者：{{ article.user.username }}</span>
           <span class="postmeta_category">类别：<a href="" rel="category">{{ article.category.name }}</a></span>
           <span class="postmeta_time">发布时间：{{ article.date_publish | date:'Y-m-d' }}</span>  <!--date 过滤器-->
-          <span class="postmeta_clickcount">浏览量：（<a href="/">{{ article.click_count }}</a>）</span>
+          <span class="postmeta_clickcount">浏览量：（{{ article.click_count }}）</span>
         </div>
     </div>
     <div class="entry">
@@ -34,7 +34,7 @@
     <div class="article-more">
         <p>上一篇：
             {% if previous_article %}
-            <a href="{% url 'article'%}?id={{ previous_article.id }}">{{ previous_article.title }}</a>
+            <a href="{% url 'article'%}?id={{ previous_article.id }}" color="blue">{{ previous_article.title }}</a>
             {% else %}
             没有上一篇了哦~
             {% endif %}
@@ -48,47 +48,108 @@
         </p>
     </div>
 
-    <div class="commentstitle"><h3 id="comments">总共有&nbsp<span class="commentsnumber">{{ article.comment_set.all.count }}</span>&nbsp条评论</h3></div>
-      <ol class="commentlist">
-          {% for comment in comment_list %}
-          <li id="comment-59418">
-            <div class="top"><a href='{{ comment.url }}' rel='external nofollow' class='url'>{{ comment.username }}</a><span class="time"> @ <a href="#comment-59418" title="">{{ comment.date_publish | date:'Y-m-d H:i:s' }}</a></span></div>
-            <div><img alt='' src='{% static "images/default.jpg" %}' class='avatar avatar-32 photo' height='32' width='32' /></div>
-            <div class="body">
-                <p>{{ comment.content }}</p>
-            </div>
-          </li>
-              {% for children_comment in comment.children_comment %}
-              <li id="comment-59542">
-                <div class="reply">
-                  <div class="top"><a href="{{ children_comment.url }}" rel="external nofollow" class="url">{{ children_comment.username }}</a><span class="time"> @ <a href="#comment-59543" title="">{{ children_comment.date_publish | date:'Y-m-d H:i:s' }}</a></span></div>
-                  <div><img alt="" src="{% static 'images/default.jpg' %}" class="avatar avatar-32 photo" height="32" width="32"></div>
-                  <div class="body">{{ children_comment.content }}</div>
-                </div>
-              </li>
-              {% endfor %}
-          {% endfor %}
-      </ol>
-
+    <div class="commentstitle"><h5 id="comments">总共有&nbsp<span class="commentsnumber">{{ article.comment_set.all.count }}</span>&nbsp条评论</h5></div>
     <div id="commentform">
         <h3 id="respond">亲，留下你的评论吧！</h3>
-        {% if not request.user.is_authenticated %}
-            <div class='login_info'>还没有登陆？可以登录后再评论哦。<b><a href="{% url 'login' %}">&raquo;去登录</a>&nbsp;<a href="{% url 'reg' %}">&raquo;去注册</a></b></div>
+        {% if request.user.is_authenticated %}
+        <div class='login_info'>尊敬的用户&nbsp<b>{{ request.user.username }}</b> ,&nbsp快来写点评论吧!&nbsp;<a href="{% url 'logout' %}" ><div style="color:#0000E3">注销</div></a></div>
+        <div class='login_info'>
+            <form id="comment_form" action="{% url 'comment_post' %}" method="post">
+                {% csrf_token %}
+                <p hidden>{{ comment_form.author }}</p>
+                <p>{{ comment_form.text }}</p>
+                <span id="comment_error" class="text-danger pull-left" ></span>
+                <p>{{ comment_form.article }}<input type="submit" value="提交评论" class="btn btn-primary pull-right"/></p>
+            </form>
+        </div>
         {% else %}
-            <div class='login_info'>尊敬的用户&nbsp<b>{{ request.user.username }}</b> ,&nbsp快来写点评论吧!&nbsp;<a href="{% url 'logout' %}" ><div style="color:#0000E3">注销</div></a></div>
+        <div class='login_info'>登录后才可以评论哦~~<b><a class='btn btn-primary' href="{% url 'login' %}">&nbsp;去登录</a> &nbsp;<a class='btn btn-danger' href="{% url 'reg' %}">&raquo;去注册</a></b></div>
         {% endif %}
-        <form action="{% url 'comment_post' %}" method="post">
-            {% csrf_token %}
-            <p>{{ comment_form.author }}
-            <label for="author">Name (required)</label></p>
-            <p>{{ comment_form.email }}
-            <label for="email">Email (Will NOT be published) (required)</label></p>
-            <p>{{ comment_form.url }}
-            <label for="url">URL</label></p>
-            <p>{{ comment_form.comment }}</p>
-            <p>{{ comment_form.article }}<input type="submit" id="submit" tabindex="5" value="提交评论" class="button" /></p>
-        </form>
+    </div>
+    <div style="margin:50px"></div>
+    <div id="comment_area">
+        <ol class="commentlist" id="commentlist" >
+              {% for comment in comment_list %}
+              <li id="comment-59418">
+                <div id="top" class="top"> {{ comment.username }} <span class="time"> < {{ comment.date_publish | date:'Y-m-d H:i:s' }} > </span></div>
+                <!--<div><img alt='' src='{% static "images/default.jpg" %}' class='avatar avatar-32 photo' height='32' width='32' /></div>-->
+                <div class="body">
+                    <p>{{ comment.content|safe }}</p>
+                </div>
+              </li>
+                  <!--
+                  {% for children_comment in comment.children_comment %}
+                  <li id="comment-59542">
+                    <div class="reply">
+                      <div class="top"><a href="{{ children_comment.url }}" rel="external nofollow" class="url">{{ children_comment.username }}</a><span class="time"> @ <a href="#comment-59543" title="">{{ children_comment.date_publish | date:'Y-m-d H:i:s' }}</a></span></div>
+                      <div><img alt="" src="{% static 'images/default.jpg' %}" class="avatar avatar-32 photo" height="32" width="32"></div>
+                      <div class="body">{{ children_comment.content|safe }}</div>
+                    </div>
+                  </li>
+                  {% endfor %}
+                  -->
+              {% empty %}
+                <span id="no_comment">暂无评论~</span>
+              {% endfor %}
+        </ol>
     </div>
 </div>
 {% endblock left_content %}
+
+
+<!--异步提交评论-->
+{% block script_comment %}
+    <script type="text/javascript">
+        $("#comment_form").submit(function(){
+            // 先清空错误信息
+            $("#comment_error").text('');
+
+            // 再判断输入框是否为空
+            if(CKEDITOR.instances["id_text"].document.getBody().getText().trim()==''){
+                $("#comment_error").text('评论内容不能为空！');
+            }
+
+            // 更新数据到 textarea
+            CKEDITOR.instances["id_text"].updateElement();
+
+            // 异步提交
+            $.ajax({
+                url:{% url 'comment_post' %},
+                type:'POST',
+                data:$(this).serialize(),
+                cache:false,
+                success:function(data){
+                    console.log(data);
+                    if(data['status']=="SUCCESS"){
+                        //插入数据
+                        var comment_html =
+                                              '<li id="comment-59418">'
+                                             +'<div id="top" class="top">'
+                                             +'<span class="time">'
+                                             +data['username']
+                                             +'<'
+                                             +data['comment_time']
+                                             +'>'
+                                             +'</span></div>'
+                                             +'<div class="body"><p>'
+                                             +data['text']
+                                             +'</p></div></li>';
+                        $("#commentlist").prepend(comment_html);
+                        // 清空编辑框的内容
+                        CKEDITOR.instances["id_text"].setData('');
+                    }else{
+                        // 显示错误信息
+                        $("#comment_error").text(data['message']);
+                    }
+                },
+                error:function(xhr){
+                    console.log(xhr);
+                },
+            });
+            return false;
+        });
+    </script>
+
+{% endblock script_comment %}
+
 

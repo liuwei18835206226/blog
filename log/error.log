@@ -116,3 +116,79 @@
 2018-11-09 14:59:59,731 [Thread-2:7788] [blog.views:144]             [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'COOOKIES'
 2018-11-09 15:02:51,523 [Thread-8:6640] [blog.views:144]             [views:article] [ERROR]- 'WSGIRequest' object has no attribute 'COOOKIES'
 2018-11-09 16:42:15,785 [Thread-7:4796] [blog.views:67]             [views:index] [ERROR]- invalid literal for int() with base 10: ''
+2018-11-11 10:19:26,337 [Thread-116:4288] [blog.views:93]             [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-11-11 10:19:36,456 [Thread-120:5696] [blog.views:93]             [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-11-11 10:34:08,145 [Thread-122:6984] [blog.views:93]             [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-11-11 10:36:19,454 [Thread-129:6740] [blog.views:93]             [views:tagArticle] [ERROR]- invalid literal for int() with base 10: ''
+2018-11-11 17:02:06,042 [Thread-3:9024] [blog.views:216]             [views:do_login] [ERROR]- ['用户名或密码错误']
+2018-11-11 17:02:12,603 [Thread-4:7732] [blog.views:216]             [views:do_login] [ERROR]- ['用户名或密码错误']
+2018-11-12 10:29:43,103 [Thread-57:7364] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:29:52,671 [Thread-59:7384] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:40:20,726 [Thread-2:5188] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:40:28,787 [Thread-4:6736] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:41:05,639 [Thread-2:2840] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:41:09,780 [Thread-3:7876] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:41:12,869 [Thread-4:7784] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:42:26,199 [Thread-2:8112] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:42:32,301 [Thread-4:6264] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:45:37,039 [Thread-2:7120] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:45:41,998 [Thread-4:6604] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:46:36,143 [Thread-23:7368] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:48:17,684 [Thread-2:2556] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:49:56,661 [Thread-4:6996] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:50:29,075 [Thread-14:5108] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:52:41,662 [Thread-2:7224] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:52:43,566 [Thread-4:7280] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:54:00,874 [Thread-6:7692] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:54:04,731 [Thread-7:2948] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:56:15,878 [Thread-10:7424] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:56:19,851 [Thread-11:4784] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:58:56,271 [Thread-13:7988] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:59:21,847 [Thread-15:6196] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:59:28,439 [Thread-16:6480] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 10:59:31,484 [Thread-17:5556] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 11:03:15,742 [Thread-2:5616] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-12 11:03:19,964 [Thread-4:7284] [blog.views:191]             [views:do_reg] [ERROR]- Manager isn't available; 'auth.User' has been swapped for 'myBlog.user'
+2018-11-15 14:41:50,515 [Thread-2:6200] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:42:27,356 [Thread-8:3040] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:42:32,050 [Thread-11:10168] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:42:35,541 [Thread-13:10236] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:42:44,012 [Thread-16:10192] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:42:48,925 [Thread-19:10232] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:43:20,169 [Thread-22:8776] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:43:46,878 [Thread-24:9556] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:43:49,242 [Thread-27:9684] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:43:51,487 [Thread-29:9144] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:43:53,701 [Thread-32:5608] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:44:04,274 [Thread-37:8908] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:44:10,002 [Thread-39:8916] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:44:12,173 [Thread-42:8668] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:44:15,098 [Thread-45:9868] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:44:16,905 [Thread-47:8772] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:44:19,573 [Thread-49:8868] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-15 14:44:20,611 [Thread-51:10052] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:00:17,026 [Thread-55:8324] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:05:09,809 [Thread-112:9856] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:05:27,496 [Thread-115:7072] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:05:29,362 [Thread-119:6524] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:05:31,547 [Thread-122:9072] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:05:34,997 [Thread-124:7976] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:05:38,177 [Thread-127:9316] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:05:41,464 [Thread-129:8088] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:05:43,977 [Thread-131:7904] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:05:47,164 [Thread-133:8612] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:05:49,155 [Thread-136:2160] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:06:11,615 [Thread-139:10000] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:06:13,527 [Thread-142:3352] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:06:15,303 [Thread-145:7368] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:06:17,037 [Thread-147:5304] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:06:18,918 [Thread-149:8848] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:06:19,801 [Thread-151:3260] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:06:21,140 [Thread-154:8332] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:06:47,444 [Thread-161:8400] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:08:11,582 [Thread-169:9804] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:08:56,020 [Thread-178:5360] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:11:33,129 [Thread-192:10128] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:11:47,598 [Thread-200:10220] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:12:13,347 [Thread-210:9148] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-17 10:13:32,964 [Thread-213:9896] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
