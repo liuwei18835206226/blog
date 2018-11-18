@@ -42,15 +42,15 @@ def global_settings(request):
 
     # 友情链接
     # 浏览排行
-    click_count_list = Article.objects.all().order_by('-click_count')
+    click_count_list = Article.objects.order_by('-click_count')[:6]
 
     # 站长推荐
-    is_recommend_list = Article.objects.filter(is_recommend=True)
+    is_recommend_list = Article.objects.filter(is_recommend=True)[:6]
 
     # 评论排行
     comment_count_list = Comment.objects.values('article').annotate(comment_count=Count('article')).order_by('-comment_count')
     # print(comment_count_list)
-    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
 
     return locals()
 
@@ -71,13 +71,15 @@ def index(request):
 # 归档文章详情展示
 def archive(request):
     try:
+        # 文章归档
+        archive_list = Article.objects.distinct_date()
+        print(archive_list)
+
         # 先获取客户端提交的数据
         year = request.GET.get('year',None)
         month = request.GET.get('month', None)
         article_list = Article.objects.filter(date_publish__icontains=year+'-'+month)   # 注意，__icontains 两横杠
         article_list = getPage(request,article_list)
-        # 文章归档
-        archive_list = Article.objects.distinct_date()
     except Exception as e:
         logger.error(e)
     return render(request,'archive.html',locals())
@@ -122,10 +124,7 @@ def article(request):
             return render(request,'failure.html',{'reason':'没有找到相应的文章'})
 
         # 评论表单
-        comment_form = CommentForm({'author': request.user.username,
-                                    'email': request.user.email,
-                                    'url': request.user.url,
-                                    'article': id} if request.user.is_authenticated() else{'article': id})
+        comment_form = CommentForm({'author': request.user.username,})
 
         # 获取评论信息
         comments = Comment.objects.filter(article=article)
@@ -155,10 +154,10 @@ def comment_post(request):
         if comment_form.is_valid():
             #获取表单信息
             comment = Comment.objects.create(username=comment_form.cleaned_data["author"],
-                                             email=comment_form.cleaned_data["email"],
-                                             url=comment_form.cleaned_data["url"],
+                                             # email=comment_form.cleaned_data["email"],
+                                             # url=comment_form.cleaned_data["url"],
                                              content=comment_form.cleaned_data["text"],
-                                             article_id=comment_form.cleaned_data["article"],
+                                             # article_id=comment_form.cleaned_data["article"],
                                              user=request.user if request.user.is_authenticated() else None)    # 判断是否已经登录
             comment.save()
 

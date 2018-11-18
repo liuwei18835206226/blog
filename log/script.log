@@ -8602,3 +8602,254 @@ ValueError: Invalid format string
 2018-11-17 16:53:43,020 [Thread-15:13268] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
 2018-11-17 16:53:43,199 [Thread-21:13776] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
 2018-11-17 16:53:43,407 [Thread-38:12476] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-17 17:50:54,862 [Thread-4:8960] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-17 17:50:55,349 [Thread-5:10860] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-17 17:50:55,497 [Thread-6:11336] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-17 17:50:58,551 [Thread-8:13552] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-17 18:09:25,570 [Thread-12:12664] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-17 18:09:29,951 [Thread-14:13644] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-17 18:09:44,070 [Thread-16:14108] [django.request:152]             [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-11-17 18:10:53,476 [Thread-18:13896] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-17 18:12:22,664 [Thread-3:8244] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-17 18:12:27,688 [Thread-5:8804] [django.request:152]             [base:get_response] [WARNING]- Not Found: /archive/js/nav.js
+2018-11-17 18:12:42,781 [Thread-7:12624] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-17 18:12:45,936 [Thread-10:14188] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-17 18:12:55,208 [Thread-12:2368] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-17 18:12:55,256 [Thread-13:13356] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-17 18:13:00,456 [Thread-15:9924] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-17 18:13:05,469 [Thread-18:12880] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 08:25:22,015 [Thread-7:4952] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 08:25:23,034 [Thread-8:4160] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 08:25:24,977 [Thread-9:2600] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 08:25:39,261 [Thread-11:5948] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 08:25:39,665 [Thread-12:5972] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 08:25:45,560 [Thread-14:4208] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 08:41:47,629 [Thread-3:4812] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 08:41:48,060 [Thread-4:4756] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:15:14,137 [Thread-6:4464] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:15:14,349 [Thread-7:4476] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:15:41,890 [Thread-9:7576] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:15:44,843 [Thread-23:4416] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:15:45,245 [Thread-27:6356] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:15:45,730 [Thread-43:5200] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:16:00,476 [Thread-57:6432] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:16:01,051 [Thread-76:7324] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:16:03,852 [Thread-90:5080] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:16:04,291 [Thread-109:5460] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:18:21,486 [Thread-123:5940] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:18:21,847 [Thread-142:7900] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:20:41,154 [Thread-156:6272] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:20:41,780 [Thread-174:7512] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:20:46,017 [Thread-177:6948] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:22:34,169 [Thread-191:7072] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:22:34,730 [Thread-210:7488] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:23:02,309 [Thread-224:6772] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:23:02,750 [Thread-243:6720] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:23:09,503 [Thread-262:6356] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:23:10,096 [Thread-281:4420] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:23:58,002 [Thread-295:4436] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:23:58,527 [Thread-314:5312] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:26:00,675 [Thread-328:7972] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:26:01,062 [Thread-347:6004] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:26:25,415 [Thread-361:4428] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:26:25,845 [Thread-380:7836] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:27:08,916 [Thread-394:6368] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:27:09,276 [Thread-413:6776] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:27:16,666 [Thread-417:4472] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:30:23,920 [Thread-431:7740] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:30:24,302 [Thread-450:7044] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:30:34,603 [Thread-464:7628] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:30:35,163 [Thread-483:5364] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:31:57,928 [Thread-498:7080] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:31:58,394 [Thread-517:3492] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:34:03,040 [Thread-531:6988] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:34:03,575 [Thread-550:6548] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:34:06,718 [Thread-564:7404] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:34:07,020 [Thread-583:5220] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:34:14,292 [Thread-586:7508] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:35:24,003 [Thread-600:7892] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:35:24,492 [Thread-619:5680] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:36:06,729 [Thread-633:6148] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:36:07,277 [Thread-652:6352] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:36:27,979 [Thread-667:6776] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:36:28,591 [Thread-686:7576] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:40:48,381 [Thread-700:7724] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:40:48,807 [Thread-719:7728] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:42:55,756 [Thread-733:268] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:42:56,244 [Thread-752:3444] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:43:18,413 [Thread-766:6592] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:43:18,950 [Thread-785:7944] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:44:04,245 [Thread-799:7884] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:44:04,622 [Thread-818:6304] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:44:24,177 [Thread-832:4648] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:44:24,770 [Thread-851:5364] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:44:41,172 [Thread-865:7316] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:44:41,782 [Thread-884:2296] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:44:52,838 [Thread-898:6300] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:44:53,220 [Thread-917:2908] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:45:04,431 [Thread-931:5272] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:45:04,727 [Thread-936:6772] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:45:05,236 [Thread-951:2948] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:45:17,245 [Thread-966:8012] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:45:17,686 [Thread-985:5788] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:45:40,966 [Thread-999:6436] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:45:41,376 [Thread-1018:4288] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:49:15,977 [Thread-20:4616] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:49:16,684 [Thread-39:6848] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:55:04,549 [Thread-15:5484] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:55:05,083 [Thread-34:4992] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:56:19,875 [Thread-4:6432] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:56:20,162 [Thread-5:6512] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:56:20,385 [Thread-6:6316] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:56:26,946 [Thread-20:8124] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:56:27,593 [Thread-39:4288] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 09:57:47,850 [Thread-50:6000] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/myBlog/category/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\mysql\base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "C:\python365\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\python365\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1451, 'Cannot delete or update a parent row: a foreign key constraint fails (`blog_db`.`article`, CONSTRAINT `article_category_id_99127861_fk_category_id` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\python365\lib\site-packages\django\contrib\admin\options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\python365\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\python365\lib\site-packages\django\contrib\admin\sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "C:\python365\lib\site-packages\django\utils\decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\utils\decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\python365\lib\site-packages\django\utils\decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "C:\python365\lib\site-packages\django\contrib\admin\options.py", line 1584, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "C:\python365\lib\site-packages\django\contrib\admin\options.py", line 1286, in response_action
+    response = func(self, request, queryset)
+  File "C:\python365\lib\site-packages\django\contrib\admin\actions.py", line 49, in delete_selected
+    queryset.delete()
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 617, in delete
+    deleted, _rows_count = collector.delete()
+  File "C:\python365\lib\site-packages\django\db\models\deletion.py", line 284, in delete
+    count = qs._raw_delete(using=self.using)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 631, in _raw_delete
+    return sql.DeleteQuery(self.model).delete_qs(self, using)
+  File "C:\python365\lib\site-packages\django\db\models\sql\subqueries.py", line 80, in delete_qs
+    cursor = self.get_compiler(using).execute_sql(CURSOR)
+  File "C:\python365\lib\site-packages\django\db\models\sql\compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "C:\python365\lib\site-packages\django\db\models\sql\compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\python365\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\mysql\base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "C:\python365\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\python365\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1451, 'Cannot delete or update a parent row: a foreign key constraint fails (`blog_db`.`article`, CONSTRAINT `article_category_id_99127861_fk_category_id` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`))')
+2018-11-18 09:59:27,639 [Thread-77:4816] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 09:59:38,521 [Thread-79:7500] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:00:19,459 [Thread-81:6196] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:00:28,387 [Thread-83:7804] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:03:58,719 [Thread-97:6872] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:03:59,262 [Thread-116:5572] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 10:13:33,802 [Thread-134:7528] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:13:34,321 [Thread-153:5716] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 10:13:39,567 [Thread-170:2824] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:13:39,951 [Thread-189:7264] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 10:14:12,574 [Thread-203:4464] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:14:12,976 [Thread-222:5992] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 10:14:32,300 [Thread-226:3712] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:15:08,318 [Thread-231:7944] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:20:41,430 [Thread-235:6264] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:20:44,091 [Thread-237:7468] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:22:05,725 [Thread-241:8128] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:22:11,427 [Thread-244:5932] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:22:47,615 [Thread-246:7560] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:23:18,315 [Thread-253:4312] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:23:58,538 [Thread-257:6500] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:24:15,046 [Thread-260:4440] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:25:52,912 [Thread-264:7708] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:26:27,738 [Thread-266:4776] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:26:45,924 [Thread-268:4632] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:26:59,731 [Thread-270:7836] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:27:18,030 [Thread-275:3156] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:27:45,521 [Thread-277:7736] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:27:45,595 [Thread-278:6604] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-18 10:28:05,879 [Thread-292:4452] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:28:06,397 [Thread-311:6748] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 10:28:08,690 [Thread-314:6512] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:28:15,162 [Thread-316:5572] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:28:20,569 [Thread-318:4628] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:28:24,353 [Thread-320:7072] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:28:31,094 [Thread-324:5796] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:29:16,959 [Thread-326:1580] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:29:36,564 [Thread-330:7088] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:29:38,748 [Thread-332:6548] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:29:44,065 [Thread-334:7928] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:29:58,443 [Thread-337:6308] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:30:00,224 [Thread-339:7832] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:30:02,240 [Thread-341:5460] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:30:06,716 [Thread-343:7180] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:30:13,775 [Thread-345:4832] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:30:25,545 [Thread-347:7320] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 10:48:20,675 [Thread-354:6200] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 10:54:02,043 [Thread-358:7304] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 11:03:23,061 [Thread-5:6696] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 11:03:26,483 [Thread-19:6692] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/nav.js
+2018-11-18 11:03:26,936 [Thread-38:6896] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 11:03:30,348 [Thread-40:6560] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 11:05:12,646 [Thread-3:4756] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 11:06:07,559 [Thread-3:7388] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 11:11:06,932 [Thread-15:5528] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 11:11:07,657 [Thread-41:2804] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico

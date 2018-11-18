@@ -26,12 +26,12 @@ class CommentForm(forms.Form):
     author = forms.CharField(widget=forms.TextInput(attrs={"id": "author", "class": "comment_input",
                                                            "required": "required","size": "25", "tabindex": "1"}),
                               max_length=50,required=False)
-    email = forms.EmailField(widget=forms.TextInput(attrs={"id":"email","type":"email","class": "comment_input",
-                                                           "required":"required","size":"25", "tabindex":"2"}),
-                                 max_length=50, required=False)
-    url = forms.URLField(widget=forms.TextInput(attrs={"id":"url","type":"url","class": "comment_input",
-                                                       "size":"25", "tabindex":"3"}),
-                              max_length=100, required=False)   # required 为 false 为非必填，不写为必填
+    # email = forms.EmailField(widget=forms.TextInput(attrs={"id":"email","type":"email","class": "comment_input",
+    #                                                        "required":"required","size":"25", "tabindex":"2"}),
+    #                              max_length=50, required=False)
+    # url = forms.URLField(widget=forms.TextInput(attrs={"id":"url","type":"url","class": "comment_input",
+    #                                                    "size":"25", "tabindex":"3"}),
+    #                           max_length=100, required=False)   # required 为 false 为非必填，不写为必填
     # text = forms.CharField(widget=forms.Textarea(attrs={"id":"comment","class": "message_input",
     #                                                            "required": "required", "cols": "25",
     #                                                            "rows": "5", "tabindex": "4"}),
@@ -39,7 +39,7 @@ class CommentForm(forms.Form):
     text = forms.CharField(widget=CKEditorWidget(config_name='comment_ckeditor'),
                            error_messages={"required":"评论内容不能为空！"})
 
-    article = forms.CharField(widget=forms.HiddenInput())
+    # article = forms.CharField(widget=forms.HiddenInput())
 
 
 

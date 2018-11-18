@@ -52,18 +52,19 @@
     <div id="commentform">
         <h3 id="respond">亲，留下你的评论吧！</h3>
         {% if request.user.is_authenticated %}
-        <div class='login_info'>尊敬的用户&nbsp<b>{{ request.user.username }}</b> ,&nbsp快来写点评论吧!&nbsp;<a href="{% url 'logout' %}" ><div style="color:#0000E3">注销</div></a></div>
+        <div class='login_info'>尊敬的用户&nbsp<b>{{ request.user.username }}</b> ,&nbsp快来写点评论吧!&nbsp;<a href="{% url 'logout' %}" style="color:#0000E3">注销</a></div>
         <div class='login_info'>
             <form id="comment_form" action="{% url 'comment_post' %}" method="post">
                 {% csrf_token %}
                 <p hidden>{{ comment_form.author }}</p>
                 <p>{{ comment_form.text }}</p>
                 <span id="comment_error" class="text-danger pull-left" ></span>
-                <p>{{ comment_form.article }}<input type="submit" value="提交评论" class="btn btn-primary pull-right"/></p>
+                <!--<p>{{ comment_form.article }}</p>  -->
+                <input type="submit" value="提交评论" class="btn btn-primary pull-right"/>
             </form>
         </div>
         {% else %}
-        <div class='login_info'>登录后才可以评论哦~~<b><a class='btn btn-primary' href="{% url 'login' %}">&nbsp;去登录</a> &nbsp;<a class='btn btn-danger' href="{% url 'reg' %}">&raquo;去注册</a></b></div>
+        <div class='login_info'>登录后才可以评论哦~~<b><a class='btn btn-primary' href="{% url 'login' %}">&nbsp;&raquo;去登录</a> &nbsp;<a class='btn btn-danger' href="{% url 'reg' %}">&raquo;去注册</a></b></div>
         {% endif %}
     </div>
     <div style="margin:50px"></div>
