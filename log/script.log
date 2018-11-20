@@ -8853,3 +8853,1368 @@ django.db.utils.IntegrityError: (1451, 'Cannot delete or update a parent row: a 
 2018-11-18 11:06:07,559 [Thread-3:7388] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
 2018-11-18 11:11:06,932 [Thread-15:5528] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
 2018-11-18 11:11:07,657 [Thread-41:2804] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 11:12:21,091 [Thread-55:5880] [django.request:152]             [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2018-11-18 11:12:21,636 [Thread-78:6972] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 12:51:08,973 [Thread-80:3044] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 12:51:10,473 [Thread-81:2356] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 12:51:29,765 [Thread-82:9832] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 12:51:38,051 [Thread-84:9856] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 12:55:21,563 [Thread-86:9928] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 12:55:22,616 [Thread-87:7280] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 12:56:09,118 [Thread-2:4880] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 14:11:13,889 [Thread-4:9764] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 14:12:22,067 [Thread-7:8360] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 14:14:43,831 [Thread-2:8528] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 14:14:44,772 [Thread-3:4800] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 14:15:00,216 [Thread-6:5624] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\python365\lib\site-packages\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "C:\python365\lib\site-packages\django\template\response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 14:59:21,480 [Thread-9:9948] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:00:53,474 [Thread-8:7588] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:03:06,548 [Thread-2:2824] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:06:12,293 [Thread-2:8244] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:06:39,437 [Thread-4:8308] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:09:30,024 [Thread-8:8920] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:10:02,300 [Thread-2:6332] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:10:15,878 [Thread-7:7408] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:11:12,085 [Thread-2:9216] [django.request:152]             [base:get_response] [WARNING]- Not Found: /
+2018-11-18 15:11:34,319 [Thread-2:5864] [django.request:152]             [base:get_response] [WARNING]- Not Found: /
+2018-11-18 15:12:43,716 [Thread-2:7608] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:17:17,854 [Thread-4:10080] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:17:20,869 [Thread-5:8196] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:17:22,374 [Thread-7:8472] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:17:23,555 [Thread-8:7488] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:24:11,110 [Thread-10:9640] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:24:12,112 [Thread-11:8632] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 15:30:16,486 [Thread-13:6868] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\python365\lib\site-packages\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "C:\python365\lib\site-packages\django\template\response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:31:35,841 [Thread-14:4256] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\python365\lib\site-packages\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "C:\python365\lib\site-packages\django\template\response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:46:53,669 [Thread-16:6156] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\python365\lib\site-packages\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "C:\python365\lib\site-packages\django\template\response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:58:49,182 [Thread-2:1756] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = (Article.objects.get(pk=comment['article']) for comment in comment_count_list)[:6]
+TypeError: 'generator' object is not subscriptable
+2018-11-18 15:59:15,592 [Thread-2:9784] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 15:59:37,157 [Thread-2:4840] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 68, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-18 16:08:51,272 [Thread-11:8256] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-18 16:08:57,341 [Thread-45:8036] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:15:27,831 [Thread-19:6364] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:19:30,499 [Thread-87:6372] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:30:47,713 [Thread-131:6456] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:32:28,559 [Thread-2:7008] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 205, in render
+    with context.bind_template(self):
+  File "C:\python365\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\python365\lib\site-packages\django\template\context.py", line 263, in bind_template
+    updates.update(processor(self.request))
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in global_settings
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "D:\pch\python\blog\myBlog\views.py", line 53, in <listcomp>
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+myBlog.models.DoesNotExist: Article matching query does not exist.
+2018-11-20 15:32:30,988 [Thread-3:5148] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:32:47,148 [Thread-39:5468] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:37:42,501 [Thread-32:7008] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:39:25,486 [Thread-39:8016] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:42:12,305 [Thread-77:3568] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:42:15,989 [Thread-115:208] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:42:34,530 [Thread-37:1836] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:43:12,504 [Thread-37:6892] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:44:59,021 [Thread-5:7028] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:45:07,449 [Thread-37:7088] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:55:25,172 [Thread-11:8016] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 15:55:29,158 [Thread-42:6664] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 16:00:12,643 [Thread-3:5400] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 16:02:20,262 [Thread-3:6380] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 16:04:52,868 [Thread-35:9260] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 16:04:57,073 [Thread-69:9396] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 16:08:39,489 [Thread-105:5092] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 16:10:58,515 [Thread-39:8908] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 16:14:39,334 [Thread-35:9772] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 16:31:45,076 [Thread-35:9388] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 17:10:07,174 [Thread-4:10072] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 17:20:36,458 [Thread-87:3876] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:20:39,821 [Thread-88:9868] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:20:40,424 [Thread-89:9376] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:20:40,604 [Thread-90:8988] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:20:40,824 [Thread-91:9536] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:21:22,772 [Thread-38:8240] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 17:21:25,424 [Thread-39:9700] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:21:27,564 [Thread-40:7336] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:21:27,867 [Thread-41:8324] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:21:27,999 [Thread-42:7828] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:21:28,143 [Thread-43:7824] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:21:28,272 [Thread-44:9004] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:21:28,408 [Thread-45:9532] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:21:28,531 [Thread-46:968] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:06,508 [Thread-48:6384] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:06,670 [Thread-49:9924] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:06,809 [Thread-50:4604] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:06,925 [Thread-51:8928] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:07,072 [Thread-52:7500] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:07,236 [Thread-53:9556] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:07,544 [Thread-54:9048] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:07,706 [Thread-55:10160] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:07,817 [Thread-56:8216] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:07,961 [Thread-57:7360] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:08,117 [Thread-58:10040] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:08,256 [Thread-59:9340] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:22:08,449 [Thread-60:8656] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:24:34,682 [Thread-61:3876] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:24:35,718 [Thread-62:7428] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:24:35,884 [Thread-63:9868] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 160, in comment_post
+    email=comment_form.cleaned_data["email"],
+KeyError: 'email'
+2018-11-20 17:29:56,434 [Thread-32:7000] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 17:30:36,704 [Thread-32:10008] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 17:30:54,716 [Thread-67:8968] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 17:31:18,580 [Thread-35:8596] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 17:33:23,543 [Thread-32:8680] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 17:45:09,374 [Thread-31:8568] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 17:45:11,711 [Thread-32:9088] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 163, in comment_post
+    article_id=comment_form.cleaned_data["article"],
+KeyError: 'article'
+2018-11-20 17:45:14,455 [Thread-33:8312] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 163, in comment_post
+    article_id=comment_form.cleaned_data["article"],
+KeyError: 'article'
+2018-11-20 17:45:14,926 [Thread-34:9592] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 163, in comment_post
+    article_id=comment_form.cleaned_data["article"],
+KeyError: 'article'
+2018-11-20 17:45:15,056 [Thread-35:3536] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 163, in comment_post
+    article_id=comment_form.cleaned_data["article"],
+KeyError: 'article'
+2018-11-20 17:45:15,221 [Thread-36:7824] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 163, in comment_post
+    article_id=comment_form.cleaned_data["article"],
+KeyError: 'article'
+2018-11-20 17:45:15,367 [Thread-37:5548] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 163, in comment_post
+    article_id=comment_form.cleaned_data["article"],
+KeyError: 'article'
+2018-11-20 17:47:30,162 [Thread-32:4684] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-20 17:47:32,244 [Thread-33:10096] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 163, in comment_post
+    article_id=comment_form.cleaned_data["article"],
+KeyError: 'article'
+2018-11-20 17:47:35,567 [Thread-34:8736] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 163, in comment_post
+    article_id=comment_form.cleaned_data["article"],
+KeyError: 'article'

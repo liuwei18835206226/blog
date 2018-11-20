@@ -17,7 +17,7 @@ from django.conf.urls import url,include
 from django.contrib import admin
 from django.conf import settings
 from django import views
-from myBlog.upload import upload_image
+# from myBlog.upload import upload_image
 
 urlpatterns = [
     # url(r"^uploads/(?P<path>.*)$",views.static.serve,{"document_root":settings.MEDIA_ROOT}),  # 此处django1.10版本中views视图函数的语法出现了变化

@@ -192,3 +192,6 @@
 2018-11-17 10:11:47,598 [Thread-200:10220] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
 2018-11-17 10:12:13,347 [Thread-210:9148] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
 2018-11-17 10:13:32,964 [Thread-213:9896] [blog.views:144]             [views:article] [ERROR]- (1054, "Unknown column 'comment.root_id' in 'field list'")
+2018-11-20 15:37:39,347 [Thread-2:7476] [blog.views:143]             [views:article] [ERROR]- 'User' object has no attribute 'text'
+2018-11-20 15:44:56,237 [Thread-4:8004] [blog.views:143]             [views:article] [ERROR]- 'User' object has no attribute 'content'
+2018-11-20 15:45:04,657 [Thread-6:7804] [blog.views:143]             [views:article] [ERROR]- 'User' object has no attribute 'content'

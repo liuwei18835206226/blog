@@ -39,7 +39,7 @@ class CommentForm(forms.Form):
     text = forms.CharField(widget=CKEditorWidget(config_name='comment_ckeditor'),
                            error_messages={"required":"评论内容不能为空！"})
 
-    # article = forms.CharField(widget=forms.HiddenInput())
+    article = forms.CharField(widget=forms.HiddenInput())
 
 
 

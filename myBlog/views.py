@@ -50,7 +50,7 @@ def global_settings(request):
     # 评论排行
     comment_count_list = Comment.objects.values('article').annotate(comment_count=Count('article')).order_by('-comment_count')
     # print(comment_count_list)
-    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list][:6]
+    # article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
 
     return locals()
 
@@ -124,7 +124,10 @@ def article(request):
             return render(request,'failure.html',{'reason':'没有找到相应的文章'})
 
         # 评论表单
-        comment_form = CommentForm({'author': request.user.username,})
+        comment_form = CommentForm({'author': request.user.username,
+                                    # 'email': request.user.email,
+                                    # 'url': request.user.url,
+                                    'article':id} if request.user.is_authenticated() else{'article':id})
 
         # 获取评论信息
         comments = Comment.objects.filter(article=article)
@@ -157,7 +160,7 @@ def comment_post(request):
                                              # email=comment_form.cleaned_data["email"],
                                              # url=comment_form.cleaned_data["url"],
                                              content=comment_form.cleaned_data["text"],
-                                             # article_id=comment_form.cleaned_data["article"],
+                                             article_id=comment_form.cleaned_data["article"],
                                              user=request.user if request.user.is_authenticated() else None)    # 判断是否已经登录
             comment.save()
 
