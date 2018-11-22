@@ -21,6 +21,7 @@
     <script type="text/javascript" charset="utf-8" src="{% static 'js/ckeditor/ckeditor/ckeditor.js' %}"></script>
     <script type="text/javascript" charset="utf-8" src="{% static 'js/nav.js' %}"></script>
 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
 
     <!--[if lt IE 9]>
     <script src="js/modernizr.js"></script>
@@ -28,6 +29,7 @@
 </head>
 <body>
 <header>
+<nav id="topnav" class="f_r">
   <div class="logo">
       <h1>{{ SITE_NAME }}</h1>
       <p>{{ SITE_DESC }}</p>
@@ -42,15 +44,12 @@
         </button>
       </form>
   </div>
-
-  <nav id="topnav" class="f_r">
     <ul>
         <!--
       {% for category in category_list %}
       <a href="#" target="_blank">{{category.name}}</a>
       {% endfor %}
         -->
-
         <a href="{% url 'index' %}" target="_self">首页</a>  <!-- -blank 在新窗口打开-->
         <a href="{% url 'shuoshuo' %}" target="_self">说说</a>
         <a href="{% url 'blog' %}" target="_self">文章</a>
@@ -166,7 +165,7 @@
   <!--r_box end -->
 </article>
 <footer>
-  <p class="ft-copyright">某某某的个人博客</p>
+  <p class="ft-copyright"><a href="http://www.miitbeian.gov.cn/">晋ICP备18012422号</a></p>
   <!--<div id="tbox"> <a id="togbook" href="/"></a> <a id="gotop" href="javascript:void(0)"></a> </div>-->
 </footer>
 {% block script_comment %}

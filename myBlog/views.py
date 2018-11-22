@@ -50,7 +50,7 @@ def global_settings(request):
     # 评论排行
     comment_count_list = Comment.objects.values('article').annotate(comment_count=Count('article')).order_by('-comment_count')
     # print(comment_count_list)
-    # article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+    article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
 
     return locals()
 
@@ -59,8 +59,8 @@ def index(request):
     try:
         article_list = getPage(request,Article.objects.all())
         # 文章归档
-        archive_list = Article.objects.distinct_date()
-        # archive_list = ['2018-10文章存档','2018-09文章存档']
+        # archive_list = Article.objects.distinct_date()
+        archive_list = ['2018-10文章存档','2018-09文章存档']
         # for a in archive_list:
         #     print(a)
     except Exception as e:
@@ -170,6 +170,7 @@ def comment_post(request):
             data['comment_time'] = comment.date_publish.strftime('%Y-%m-%d %H:%M:%S')
             data['text'] = comment.content
             data['message'] = ''
+            data['comment_count'] = 0   # ??取评论数
         else:
             # return render(request, 'failure.html', {'reason': comment_form.errors})
             data['status'] = 'ERROR'

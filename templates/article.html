@@ -48,7 +48,7 @@
         </p>
     </div>
 
-    <div class="commentstitle"><h5 id="comments">总共有&nbsp<span class="commentsnumber">{{ article.comment_set.all.count }}</span>&nbsp条评论</h5></div>
+    <div class="commentstitle"><h5 id="comments">总共有&nbsp<span class="commentsnumber" id="commentsnumber">{{ article.comment_set.all.count }}</span>&nbsp条评论</h5></div>
     <div id="commentform">
         <h3 id="respond">亲，留下你的评论吧！</h3>
         {% if request.user.is_authenticated %}
@@ -136,6 +136,9 @@
                                              +data['text']
                                              +'</p></div></li>';
                         $("#commentlist").prepend(comment_html);
+                        $("#commentsnumber").html('<span class="commentsnumber" id="commentsnumber">'
+                                            +data['comment_count']
+                                            +'</span>');
                         // 清空编辑框的内容
                         CKEDITOR.instances["id_text"].setData('');
                     }else{
