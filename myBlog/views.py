@@ -48,9 +48,11 @@ def global_settings(request):
     is_recommend_list = Article.objects.filter(is_recommend=True)[:6]
 
     # 评论排行
-    comment_count_list = Comment.objects.values('article').annotate(comment_count=Count('article')).order_by('-comment_count')
+    comment_count_list = Comment.objects.values('article').annotate(comment_count=Count('article')).order_by('-comment_count')[:6]
     # print(comment_count_list)
     article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+    # 文章归档
+    archive_list = Article.objects.distinct_date()
 
     return locals()
 
@@ -58,41 +60,35 @@ def global_settings(request):
 def index(request):
     try:
         article_list = getPage(request,Article.objects.all())
-        # 文章归档
-        # archive_list = Article.objects.distinct_date()
-        archive_list = ['2018-10文章存档','2018-09文章存档']
-        # for a in archive_list:
-        #     print(a)
     except Exception as e:
-        logger.error(e)
+        # logger.error(e)
+        pass
     return render(request,'index.html',locals())
     # return HttpResponse("sdsadasdsa")
 
-# 归档文章详情展示
+# TODO 归档文章详情展示
 def archive(request):
     try:
-        # 文章归档
-        archive_list = Article.objects.distinct_date()
-        print(archive_list)
-
         # 先获取客户端提交的数据
         year = request.GET.get('year',None)
         month = request.GET.get('month', None)
         article_list = Article.objects.filter(date_publish__icontains=year+'-'+month)   # 注意，__icontains 两横杠
         article_list = getPage(request,article_list)
+        print(article_list)
     except Exception as e:
-        logger.error(e)
+        # logger.error(e)
+        pass
     return render(request,'archive.html',locals())
 
 def tagArticle(request):
     try:
         tag = request.GET.get('tag',None)
         article_list = Article.objects.filter(tag=tag)
-        # print(article_list)
-        # pdb.set_trace() # 设置断点
         article_list = getPage(request, article_list)
+        print(article_list)
     except Exception as e:
-        logger.error(e)
+        # logger.error(e)
+        pass
     return render(request,'tag_article.html',locals())
 
 
@@ -143,9 +139,10 @@ def article(request):
                 comment_list.append(comment)
 
     except Exception as e:
-        logger.error(e)
+        # logger.error(e)
+        pass
     response = render(request,'article.html',locals())
-    response.set_cookie('click_count_%s' % id ,'true',max_age=60)  # set_cookie(key,value,max_age) max_age单位为s ，不设置的话，默认关闭浏览器cookie失效
+    response.set_cookie('click_count_%s' % id ,'true',max_age=600)  # set_cookie(key,value,max_age) max_age单位为s ，不设置的话，默认关闭浏览器cookie失效
     return response
 
 # 提交评论
@@ -180,6 +177,8 @@ def comment_post(request):
     #     logger.error(e)
     # return redirect(request.META['HTTP_REFERER'])
 
+def reply(request):
+    pass
 
 # 注册
 def do_reg(request):
@@ -203,7 +202,8 @@ def do_reg(request):
         else:
             reg_form = RegForm()
     except Exception as e:
-        logger.error(e)
+        # logger.error(e)
+        pass
     return render(request, 'reg.html', locals())
 
 # 登录
@@ -227,7 +227,8 @@ def do_login(request):
         else:
             login_form = LoginForm()
     except Exception as e:
-        logger.error(e)
+        # logger.error(e)
+        pass
     return render(request, 'login.html', locals())
 
 # 注销
@@ -235,7 +236,8 @@ def do_logout(request):
     try:
         logout(request)
     except Exception as e:
-        logger.error(e)
+        # logger.error(e)
+        pass
     return redirect(request.META['HTTP_REFERER'])
 
 

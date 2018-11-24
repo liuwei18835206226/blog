@@ -10466,3 +10466,260 @@ Traceback (most recent call last):
     data['comment_count'] = article.comment_list.count()
 AttributeError: 'function' object has no attribute 'comment_list'
 2018-11-22 16:56:52,818 [Thread-19:4452] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-22 17:25:01,166 [Thread-4:5148] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-22 17:25:17,800 [Thread-36:5576] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-22 17:25:56,069 [Thread-68:5260] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-22 17:26:58,788 [Thread-100:5560] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-22 17:27:20,936 [Thread-132:1552] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-22 17:28:48,348 [Thread-165:5612] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-23 16:25:53,967 [Thread-6:6404] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 14:56:06,912 [Thread-33:5028] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:24:16,585 [Thread-33:7752] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:25:46,106 [Thread-34:7416] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:25:50,106 [Thread-36:2612] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-24 15:32:12,941 [Thread-55:2928] [django.request:152]             [base:get_response] [WARNING]- Not Found: /archive/article.html
+2018-11-24 15:39:10,281 [Thread-100:7884] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:40:07,095 [Thread-126:5452] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-24 15:40:24,054 [Thread-132:4920] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-24 15:43:38,943 [Thread-171:7068] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:46:30,267 [Thread-202:5748] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:47:13,297 [Thread-234:6884] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:47:38,937 [Thread-267:7588] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:48:05,054 [Thread-299:2940] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:48:16,044 [Thread-331:1448] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:48:36,965 [Thread-363:7144] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:49:38,751 [Thread-395:1632] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:49:55,210 [Thread-427:4504] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:50:29,499 [Thread-459:3228] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:50:50,526 [Thread-491:7716] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:51:06,989 [Thread-524:5604] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:51:45,039 [Thread-556:4256] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:52:29,027 [Thread-588:7664] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:57:29,328 [Thread-621:7004] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 15:57:49,198 [Thread-653:4088] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 16:01:12,082 [Thread-691:1868] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 16:10:30,556 [Thread-744:8136] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 16:14:08,272 [Thread-799:5004] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 16:14:21,374 [Thread-830:544] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 16:16:07,259 [Thread-872:4640] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 16:21:18,612 [Thread-931:5640] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 16:35:40,365 [Thread-1016:7704] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 17:03:27,911 [Thread-33:7716] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 17:13:17,764 [Thread-5:6732] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 17:15:41,257 [Thread-3:6148] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 18:03:11,704 [Thread-34:6076] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-24 18:52:45,837 [Thread-2:4892] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 66, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\python365\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'archive' not found. 'archive' is not a valid view function or pattern name.
+2018-11-24 18:53:36,128 [Thread-4:6632] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 66, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\python365\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'archive' not found. 'archive' is not a valid view function or pattern name.
+2018-11-24 18:55:04,388 [Thread-6:5440] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 66, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\python365\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'archive' not found. 'archive' is not a valid view function or pattern name.
+2018-11-24 18:56:07,896 [Thread-8:4268] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 66, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\python365\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'archive' not found. 'archive' is not a valid view function or pattern name.
+2018-11-24 18:57:03,504 [Thread-10:7212] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 66, in index
+    return render(request,'index.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\python365\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'archive' not found. 'archive' is not a valid view function or pattern name.
