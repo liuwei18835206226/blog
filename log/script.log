@@ -10723,3 +10723,29 @@ Traceback (most recent call last):
   File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'archive' not found. 'archive' is not a valid view function or pattern name.
+2018-11-25 08:29:25,921 [Thread-6:6440] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 09:19:46,670 [Thread-4:7324] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 09:19:49,473 [Thread-9:4260] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 09:20:00,592 [Thread-47:6988] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 09:22:35,683 [Thread-68:7760] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/modernizr.js
+2018-11-25 09:22:36,547 [Thread-81:8028] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 09:22:58,601 [Thread-95:3704] [django.request:152]             [base:get_response] [WARNING]- Not Found: /js/modernizr.js
+2018-11-25 09:48:03,092 [Thread-119:7540] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 09:48:08,622 [Thread-150:8156] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 09:54:32,998 [Thread-181:6776] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 09:54:55,935 [Thread-212:7872] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 09:56:01,648 [Thread-243:7480] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 09:56:33,225 [Thread-274:7768] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 09:58:46,397 [Thread-305:7660] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 10:00:12,510 [Thread-336:5020] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 10:01:39,111 [Thread-368:6428] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 10:33:17,556 [Thread-7:4040] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 10:46:20,848 [Thread-42:7308] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 10:47:25,597 [Thread-73:6596] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 10:48:53,783 [Thread-104:5012] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 10:49:12,700 [Thread-135:3936] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 10:49:29,201 [Thread-166:7368] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 10:51:55,066 [Thread-197:7444] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 10:52:09,630 [Thread-228:7108] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 10:52:23,587 [Thread-259:6992] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 10:52:45,569 [Thread-290:6952] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico

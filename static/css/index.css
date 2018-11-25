@@ -15,7 +15,7 @@
 .topnews h2 span { float: right; font-size: 12px; font-weight: normal; }
 .topnews h2 span a { display: inline-block; padding: 0 5px; }
 .topnews h2 span a:hover { color: #000 }
-.blogs { padding: 30px 0; position: relative; border-bottom: #CCC 1px solid; overflow: hidden }
+.blogs { padding: 0 0; position: relative; border-bottom: #CCC 1px solid; overflow: hidden }
 .blogs h3 { font-size: 16px; font-weight: bold; transition: all .5s; margin-bottom: 10px }
 .blogs h3 a { color: #474645; }
 .blogs h3 a:hover { color: #066; text-decoration: underline }

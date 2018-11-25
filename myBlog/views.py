@@ -74,7 +74,7 @@ def archive(request):
         month = request.GET.get('month', None)
         article_list = Article.objects.filter(date_publish__icontains=year+'-'+month)   # 注意，__icontains 两横杠
         article_list = getPage(request,article_list)
-        print(article_list)
+        # print(article_list)
     except Exception as e:
         # logger.error(e)
         pass
@@ -85,7 +85,7 @@ def tagArticle(request):
         tag = request.GET.get('tag',None)
         article_list = Article.objects.filter(tag=tag)
         article_list = getPage(request, article_list)
-        print(article_list)
+        # print(article_list)
     except Exception as e:
         # logger.error(e)
         pass

@@ -26,7 +26,9 @@ a#topnav_current { color: #000 }
 article { width: 1000px; margin: 20px auto; }
 /*footer*/
 footer { background: #333; width: 100%; clear: both; text-align: center; }
-.ft-copyright { color: #fff; line-height: 24px; }
+.ft-copyright { color: #ffffff; line-height: 24px; }
+.ft-copyright a{ color:#FFFFFF; }
+.ft-copyright a:hover { color:#FFFFFF; text-decoration:None;}
 /*.ft-list { background: url(../images/ft-wx-s.png) no-repeat right; height: 100px } */
 /*·µ»Ø¶¥²¿*/
 /**html { background-image: url(about:blank); background-attachment: fixed; } /*½â¾öIE6ÏÂ¹ö¶¯¶¶¶¯µÄÎÊÌâ*/
