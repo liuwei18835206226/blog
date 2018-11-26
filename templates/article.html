@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% load myfilter %}
+{% load like_tags %}
+
 
 {% block left_content %}
 <div class="l_box f_l">
@@ -29,6 +31,12 @@
     {% endfor %}
     <div class="info">
         Address: <a href="{{ SITE_URL }}article/?id={{ article.id }}" rel="bookmark" title="{{ article.title }}">{{ SITE_URL }}article/?id={{ article.id }}</a>
+    </div>
+
+    <div class="like" onclick="likeChange(this,'article',{{ article.pk }})">
+        <span class="glyphicon glyphicon-thumbs-up {% get_like_status article %}"></span>
+        <span class="like_num">{% get_like_count article %}</span>
+        <span>赞</span>
     </div>
 
     <div class="article-more">
@@ -64,7 +72,7 @@
             </form>
         </div>
         {% else %}
-        <div class='login_info'>登录后才可以评论哦~~<b><a class='btn btn-primary' href="{% url 'login' %}">&nbsp;&raquo;去登录</a> &nbsp;<a class='btn btn-danger' href="{% url 'reg' %}">&raquo;去注册</a></b></div>
+        <div class='login_info'>登录后才可以评论哦~~<b><a class='btn btn-primary' href="{% url 'login' %}">&nbsp;&raquo;去登录</a> or&nbsp;<a class='btn btn-danger' href="{% url 'reg' %}">&raquo;去注册</a></b></div>
         {% endif %}
     </div>
     <div style="margin:50px"></div>
@@ -79,15 +87,7 @@
                 </div>
               </li>
                   <!--
-                  {% for children_comment in comment.children_comment %}
-                  <li id="comment-59542">
-                    <div class="reply">
-                      <div class="top"><a href="{{ children_comment.url }}" rel="external nofollow" class="url">{{ children_comment.username }}</a><span class="time"> @ <a href="#comment-59543" title="">{{ children_comment.date_publish | date:'Y-m-d H:i:s' }}</a></span></div>
-                      <div><img alt="" src="{% static 'images/default.jpg' %}" class="avatar avatar-32 photo" height="32" width="32"></div>
-                      <div class="body">{{ children_comment.content|safe }}</div>
-                    </div>
-                  </li>
-                  {% endfor %}
+
                   -->
               {% empty %}
                 <span id="no_comment">暂无评论~</span>
@@ -139,6 +139,7 @@
                         $("#commentsnumber").html('<span class="commentsnumber" id="commentsnumber">'
                                             +data['comment_count']
                                             +'</span>');
+
                         // 清空编辑框的内容
                         CKEDITOR.instances["id_text"].setData('');
                     }else{
@@ -152,6 +153,39 @@
             });
             return false;
         });
+        function likeChange(obj,content_type,object_id){
+            var is_like = obj.getElementsByClassName('active').length==0;
+            $.ajax({
+                url:"{% url 'like_change' %}",
+                type:'GET',
+                data:{
+                    content_type:content_type,
+                    object_id:object_id,
+                    is_like:is_like
+                },
+                cache:false,
+                success:function(data){
+                    console.log(data);
+                    if(data['status']=='SUCCESS'){
+                        // 更新点赞状态
+                        var element = $(obj.getElementsByClassName('glyphicon'));
+                        if(is_like){
+                            element.addClass('active');
+                        }else{
+                            element.removeClass('active')
+                        }
+                        // 更新点赞数量
+                        var like_num = $(obj.getElementsByClassName('like_num'));
+                        like_num.text(data['like_num'])
+                    }else{
+                        alert(data['message']);
+                    }
+                },
+                error:function(xhr){
+                    console.log(xhr)
+                }
+            });
+        }
     </script>
 
 {% endblock script_comment %}

@@ -24,6 +24,7 @@ urlpatterns = [
     # url(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image),
     url(r'^admin/', admin.site.urls),
     url(r'^',include('myBlog.urls')),
+    url(r'^',include('likes.urls')),
 ]
 
 '''

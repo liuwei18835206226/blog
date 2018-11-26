@@ -10749,3 +10749,1147 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'archive' not found. 'archive
 2018-11-25 10:52:09,630 [Thread-228:7108] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
 2018-11-25 10:52:23,587 [Thread-259:6992] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
 2018-11-25 10:52:45,569 [Thread-290:6952] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 14:33:35,633 [Thread-6:2864] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-25 14:33:54,705 [Thread-13:8772] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-26 08:31:55,403 [Thread-7:5336] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-26 10:13:03,056 [Thread-36:5172] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-26 10:14:36,736 [Thread-65:648] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-26 10:15:54,013 [Thread-93:4724] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-26 10:16:05,575 [Thread-123:7608] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-26 10:16:26,542 [Thread-152:6960] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-26 10:17:16,215 [Thread-188:6120] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-26 11:31:15,036 [Thread-2:6312] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\python365\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'like_change' with no arguments not found. 1 pattern(s) tried: ['like_change^$']
+2018-11-26 11:33:00,779 [Thread-4:4480] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\python365\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'like_change' with no arguments not found. 1 pattern(s) tried: ['like_change^$']
+2018-11-26 11:33:08,570 [Thread-6:7496] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\python365\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'like_change' with no arguments not found. 1 pattern(s) tried: ['like_change^$']
+2018-11-26 11:34:58,865 [Thread-2:7648] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\python365\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'like_change' with no arguments not found. 1 pattern(s) tried: ['like_change^/$']
+2018-11-26 11:36:40,243 [Thread-8:6516] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 12:00:22,311 [Thread-9:1576] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 12:09:37,207 [Thread-8:6676] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 12:12:43,185 [Thread-4:7676] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 12:13:52,352 [Thread-5:7820] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 12:19:09,905 [Thread-4:4860] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 12:32:27,826 [Thread-5:6848] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 12:38:19,019 [Thread-9:6248] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 12:43:06,344 [Thread-4:6348] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:04:32,613 [Thread-8:7556] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:05:03,240 [Thread-4:1176] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:07:21,008 [Thread-4:4224] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:07:51,502 [Thread-5:5788] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:08:13,192 [Thread-9:4584] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:08:32,959 [Thread-4:5612] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:10:28,639 [Thread-10:7040] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 29, in like_change
+    object_id = int(request.GET.get('object_id'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2018-11-26 13:12:46,815 [Thread-4:8056] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 29, in like_change
+    object_id = int(request.GET.get('object_id'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2018-11-26 13:13:44,136 [Thread-7:4584] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change/
+Traceback (most recent call last):
+  File "D:\pch\python\blog\likes\views.py", line 32, in like_change
+    content_type = ContentType.objects.get(model=content_type)
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+django.contrib.contenttypes.models.DoesNotExist: ContentType matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 36, in like_change
+    return ErrorResponse(401, 'object不存在')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:22:39,023 [Thread-9:5280] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:22:57,495 [Thread-15:5264] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:23:08,193 [Thread-18:6248] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:23:12,753 [Thread-19:6772] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:23:13,689 [Thread-20:7868] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:23:14,386 [Thread-21:4492] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:23:15,202 [Thread-23:4204] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:23:15,328 [Thread-22:7064] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:23:15,380 [Thread-25:7236] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:23:15,484 [Thread-24:4648] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:23:15,669 [Thread-26:7884] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:24:15,958 [Thread-27:7296] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:24:17,674 [Thread-28:4620] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:25:47,964 [Thread-32:6552] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:25:53,961 [Thread-33:6868] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 13:25:56,769 [Thread-35:6976] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-26 15:33:33,730 [Thread-44:10124] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 15:44:12,512 [Thread-4:9468] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 15:45:56,196 [Thread-5:10032] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 15:46:01,103 [Thread-7:10040] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-26 15:46:04,885 [Thread-9:10048] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 16:10:48,481 [Thread-2:7384] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 16:12:36,837 [Thread-66:8336] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 16:16:16,562 [Thread-76:9200] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 50, in like_change
+    return ErrorResponse(402,'已点赞过')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 16:25:32,623 [Thread-5:10124] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 464, in get_or_create
+    return self.get(**lookup), False
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+likes.models.DoesNotExist: Like_Record matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\mysql\base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "C:\python365\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\python365\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'user_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 58, in like_change
+    like_count,created = Like_Record.objects.get_or_create(content_type=content_type, object_id=object_id)
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 466, in get_or_create
+    return self._create_object_from_params(lookup, params)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 506, in _create_object_from_params
+    six.reraise(*exc_info)
+  File "C:\python365\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 498, in _create_object_from_params
+    obj = self.create(**params)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\python365\lib\site-packages\django\db\models\base.py", line 807, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\python365\lib\site-packages\django\db\models\base.py", line 837, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\python365\lib\site-packages\django\db\models\base.py", line 923, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\python365\lib\site-packages\django\db\models\base.py", line 962, in _do_insert
+    using=using, raw=raw)
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 1076, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\python365\lib\site-packages\django\db\models\sql\compiler.py", line 1107, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\python365\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\mysql\base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "C:\python365\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\python365\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1048, "Column 'user_id' cannot be null")
+2018-11-26 16:26:12,409 [Thread-13:9444] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 464, in get_or_create
+    return self.get(**lookup), False
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+likes.models.DoesNotExist: Like_Record matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\mysql\base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "C:\python365\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\python365\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'user_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 58, in like_change
+    like_count,created = Like_Record.objects.get_or_create(content_type=content_type, object_id=object_id)
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 466, in get_or_create
+    return self._create_object_from_params(lookup, params)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 506, in _create_object_from_params
+    six.reraise(*exc_info)
+  File "C:\python365\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 498, in _create_object_from_params
+    obj = self.create(**params)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\python365\lib\site-packages\django\db\models\base.py", line 807, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\python365\lib\site-packages\django\db\models\base.py", line 837, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\python365\lib\site-packages\django\db\models\base.py", line 923, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\python365\lib\site-packages\django\db\models\base.py", line 962, in _do_insert
+    using=using, raw=raw)
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 1076, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\python365\lib\site-packages\django\db\models\sql\compiler.py", line 1107, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\python365\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\mysql\base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "C:\python365\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\python365\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1048, "Column 'user_id' cannot be null")
+2018-11-26 16:33:55,878 [Thread-23:5624] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 464, in get_or_create
+    return self.get(**lookup), False
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 380, in get
+    self.model._meta.object_name
+likes.models.DoesNotExist: Like_Record matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\mysql\base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "C:\python365\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\python365\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'user_id' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 58, in like_change
+    like_count,created = Like_Record.objects.get_or_create(content_type=content_type, object_id=object_id)
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 466, in get_or_create
+    return self._create_object_from_params(lookup, params)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 506, in _create_object_from_params
+    six.reraise(*exc_info)
+  File "C:\python365\lib\site-packages\django\utils\six.py", line 686, in reraise
+    raise value
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 498, in _create_object_from_params
+    obj = self.create(**params)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\python365\lib\site-packages\django\db\models\base.py", line 807, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\python365\lib\site-packages\django\db\models\base.py", line 837, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\python365\lib\site-packages\django\db\models\base.py", line 923, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\python365\lib\site-packages\django\db\models\base.py", line 962, in _do_insert
+    using=using, raw=raw)
+  File "C:\python365\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\python365\lib\site-packages\django\db\models\query.py", line 1076, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\python365\lib\site-packages\django\db\models\sql\compiler.py", line 1107, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\python365\lib\site-packages\django\utils\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\python365\lib\site-packages\django\db\backends\utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\python365\lib\site-packages\django\db\backends\mysql\base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\python365\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 727, in _read_query_result
+    result.read()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "C:\python365\lib\site-packages\pymysql\connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "C:\python365\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\python365\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1048, "Column 'user_id' cannot be null")
+2018-11-26 16:38:41,724 [Thread-22:8500] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 16:52:45,459 [Thread-26:8604] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 17:21:44,602 [Thread-5:9284] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 170, in comment_post
+    data['comment_count'] = article.comment_set.all.count   # ??取评论数
+AttributeError: 'function' object has no attribute 'comment_set'
+2018-11-26 17:29:44,308 [Thread-5:9160] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 170, in comment_post
+    data['comment_count'] = article().comment_set.all.count   # ??取评论数
+TypeError: article() missing 1 required positional argument: 'request'
+2018-11-26 17:32:40,250 [Thread-4:7524] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 170, in comment_post
+    data['comment_count'] = Article.objects.get(pk=comment.article_id).comment_set.all.count   # ??取评论数
+AttributeError: 'function' object has no attribute 'count'
+2018-11-26 18:01:28,254 [Thread-66:9900] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 18:01:30,354 [Thread-67:8544] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 18:01:30,857 [Thread-68:8512] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 18:01:31,061 [Thread-69:9804] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 18:57:26,715 [Thread-4:8336] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-26 21:32:55,859 [Thread-1036:8928] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /like_change
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\likes\views.py", line 27, in like_change
+    return ErrorResponse(400,'未登录，不允许点赞')
+  File "D:\pch\python\blog\likes\views.py", line 13, in ErrorResponse
+    return ErrorResponse(data)
+TypeError: ErrorResponse() missing 1 required positional argument: 'message'
+2018-11-26 21:49:45,984 [Thread-1210:6440] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-26 21:51:10,716 [Thread-1247:8228] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-26 21:51:21,698 [Thread-1278:9264] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-26 21:51:34,430 [Thread-1309:1728] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico

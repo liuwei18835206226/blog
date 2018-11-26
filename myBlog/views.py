@@ -167,7 +167,7 @@ def comment_post(request):
             data['comment_time'] = comment.date_publish.strftime('%Y-%m-%d %H:%M:%S')
             data['text'] = comment.content
             data['message'] = ''
-            data['comment_count'] = 0   # ??取评论数
+            data['comment_count'] = Comment.objects.filter(article=comment.article_id).count()   # 取评论数
         else:
             # return render(request, 'failure.html', {'reason': comment_form.errors})
             data['status'] = 'ERROR'
