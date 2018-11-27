@@ -5,9 +5,7 @@ body { font: 12px/1.5 'Microsoft Yahei', 'Simsun'; color: #666666; background: #
 img { border: 0; display: block }
 ul { list-style: none; }
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
-a { outline: none; }
-a:link, a:visited { text-decoration: none; color: #666 }
-a:hover { text-decoration: none; }
+
 .clear { clear: both; }
 .blank { height: 5px; overflow: hidden; width: 100%; margin: auto; clear: both; }
 .f_l { float: left; }
@@ -69,8 +67,8 @@ _margin-bottom: 15px; }/*½â¾öIE6ÏÂ²»¼æÈÝ position:fixed µÄÎÊÌâ
 .bd-news ul li:hover { border-bottom: #000 1px solid; }
 
 .logo{ margin-bottom:10px; margin-left:20px;padding-left:10px; width:50%; height:50px;display:inline-block; float:left; color:#000; font-family:'YouYuan'}
-.logo_a{overflow:hidden; margin-top:80px;  padding-right:10px; height:40px; display:inline-block; float:right;}
-.log_reg{ margin-top:5px; padding-right:20px; height:30px; display:inline-block;float:right;}
+.logo_a{margin-top:80px;  padding-right:10px; height:40px; display:inline-block; float:right;}
+.log_reg{ margin-top:5px; padding-right:20px; height:10px; display:inline-block;float:right;}
 .log_reg a{color: #FFFFFF}
 .log_reg #hello{color:#FFFFFF}
 .logo h1{ font-size:33px; font-weight:bold; height:20px; color: #f0f0f0;}

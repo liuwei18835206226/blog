@@ -53,23 +53,17 @@
         </button>
       </form>
   </div>
- <ul>
-    <!--
-  {% for category in category_list %}
-  <a href="#" target="_blank">{{category.name}}</a>
-  {% endfor %}
-    -->
+  <ul>
     <a href="{% url 'index' %}" target="_self">首页</a>  <!-- -blank 在新窗口打开-->
     <a href="{% url 'shuoshuo' %}" target="_self">说说</a>
     <a href="{% url 'blog' %}" target="_self">文章</a>
     <a href="{% url 'photos' %}" target="_self">相册</a>
     <a href="{% url 'message' %}" target="_self">留言板</a>
     <a href="{% url 'aboutme' %}" target="_self">关于我</a>
- </ul>
-  </nav>
-
-
+  </ul>
+</nav>
 </header>
+
 <article>
   <div class="l_box f_l">
       {% block left_content %}{% endblock %}

@@ -20208,3 +20208,220 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [cid] in "<Quer
 2018-11-26 22:10:40,324 [Dummy-1:9236] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.026) SELECT VERSION(); args=None
 2018-11-26 22:10:40,550 [Dummy-1:9236] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SHOW FULL TABLES; args=None
 2018-11-26 22:10:40,583 [Dummy-1:9236] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.027) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-11-26 22:10:43,236 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-26 22:10:43,305 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `article`; args=()
+2018-11-26 22:10:43,334 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `comment`.`article_id`, COUNT(`comment`.`article_id`) AS `comment_count` FROM `comment` GROUP BY `comment`.`article_id` ORDER BY `comment_count` DESC LIMIT 6; args=()
+2018-11-26 22:10:43,346 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2018-11-26 22:10:43,350 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 17; args=(17,)
+2018-11-26 22:10:43,474 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.121) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 15; args=(15,)
+2018-11-26 22:10:43,477 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-26 22:10:43,480 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 8; args=(8,)
+2018-11-26 22:10:43,483 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 5; args=(5,)
+2018-11-26 22:10:43,486 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 11; args=(11,)
+2018-11-26 22:10:43,496 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`date_publish` FROM `article` ORDER BY `article`.`date_publish` DESC; args=()
+2018-11-26 22:10:43,520 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `category`.`id`, `category`.`name`, `category`.`index` FROM `category` ORDER BY `category`.`index` ASC, `category`.`id` ASC; args=()
+2018-11-26 22:10:43,543 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`date_publish` DESC LIMIT 5; args=()
+2018-11-26 22:10:43,557 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 17; args=(17,)
+2018-11-26 22:10:44,331 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 17; args=(17,)
+2018-11-26 22:10:44,460 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.009) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 16; args=(16,)
+2018-11-26 22:10:44,464 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 16; args=(16,)
+2018-11-26 22:10:44,470 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 15; args=(15,)
+2018-11-26 22:10:44,475 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 15; args=(15,)
+2018-11-26 22:10:44,484 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 14; args=(14,)
+2018-11-26 22:10:44,488 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 14; args=(14,)
+2018-11-26 22:10:44,493 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 9; args=(9,)
+2018-11-26 22:10:44,497 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 9; args=(9,)
+2018-11-26 22:10:44,509 [Thread-2:8940] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'year' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'year'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [year] in "<QueryDict: {'wd': ['']}>"
+2018-11-26 22:10:44,820 [Thread-2:8940] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'month' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'month'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [month] in "<QueryDict: {'wd': ['']}>"
+2018-11-26 22:10:44,839 [Thread-2:8940] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'cid' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'cid'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [cid] in "<QueryDict: {'wd': ['']}>"
+2018-11-26 22:10:44,848 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.004) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`click_count` DESC LIMIT 6; args=()
+2018-11-26 22:10:44,858 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`is_recommend` = 1 ORDER BY `article`.`date_publish` DESC LIMIT 6; args=(True,)
+2018-11-26 22:10:44,864 [Thread-2:8940] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `tag`.`id`, `tag`.`name` FROM `tag`; args=()
+2018-11-26 22:10:44,902 [Thread-2:8940] [django.server:124]             [basehttp:log_message] [INFO]- "GET /?wd= HTTP/1.1" 200 16347
+2018-11-26 22:10:44,973 [Thread-3:8644] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/base.css HTTP/1.1" 304 0
+2018-11-26 22:10:47,447 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-26 22:10:47,448 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2018-11-26 22:10:47,471 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-26 22:10:47,474 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) UPDATE `article` SET `title` = 'test20181117', `desc` = 'desc01', `content` = '<span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span>', `click_count` = 40, `is_recommend` = 0, `date_publish` = '2018-11-17 02:04:48.578168', `user_id` = 1, `category_id` = 4 WHERE `article`.`id` = 16; args=('test20181117', 'desc01', '<span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span>', 40, False, '2018-11-17 02:04:48.578168', 1, 4, 16)
+2018-11-26 22:10:47,685 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.080) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`date_publish` > '2018-11-17 02:04:48.578168' ORDER BY `article`.`date_publish` ASC LIMIT 1; args=('2018-11-17 02:04:48.578168',)
+2018-11-26 22:10:47,689 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`date_publish` < '2018-11-17 02:04:48.578168' ORDER BY `article`.`date_publish` DESC LIMIT 1; args=('2018-11-17 02:04:48.578168',)
+2018-11-26 22:10:47,701 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.008) SELECT `comment`.`id`, `comment`.`content`, `comment`.`username`, `comment`.`email`, `comment`.`url`, `comment`.`date_publish`, `comment`.`user_id`, `comment`.`article_id`, `comment`.`pid_id` FROM `comment` WHERE `comment`.`article_id` = 16 ORDER BY `comment`.`date_publish` DESC; args=(16,)
+2018-11-26 22:10:47,715 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `comment`.`article_id`, COUNT(`comment`.`article_id`) AS `comment_count` FROM `comment` GROUP BY `comment`.`article_id` ORDER BY `comment_count` DESC LIMIT 6; args=()
+2018-11-26 22:10:47,721 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 17; args=(17,)
+2018-11-26 22:10:47,724 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 15; args=(15,)
+2018-11-26 22:10:47,727 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-26 22:10:47,730 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 8; args=(8,)
+2018-11-26 22:10:47,733 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 5; args=(5,)
+2018-11-26 22:10:47,736 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 11; args=(11,)
+2018-11-26 22:10:47,738 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`date_publish` FROM `article` ORDER BY `article`.`date_publish` DESC; args=()
+2018-11-26 22:10:47,749 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT `category`.`id`, `category`.`name`, `category`.`index` FROM `category` ORDER BY `category`.`index` ASC, `category`.`id` ASC; args=()
+2018-11-26 22:10:47,754 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-26 22:10:47,766 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `category`.`id`, `category`.`name`, `category`.`index` FROM `category` WHERE `category`.`id` = 4; args=(4,)
+2018-11-26 22:10:47,770 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 16; args=(16,)
+2018-11-26 22:10:47,821 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.049) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'myBlog' AND `django_content_type`.`model` = 'article'); args=('myBlog', 'article')
+2018-11-26 22:10:47,825 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `likes_likecount`.`id`, `likes_likecount`.`content_type_id`, `likes_likecount`.`object_id`, `likes_likecount`.`like_num` FROM `likes_likecount` WHERE (`likes_likecount`.`content_type_id` = 8 AND `likes_likecount`.`object_id` = 16); args=(8, 16)
+2018-11-26 22:10:47,829 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 16; args=(16,)
+2018-11-26 22:10:47,841 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`click_count` DESC LIMIT 6; args=()
+2018-11-26 22:10:47,848 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`is_recommend` = 1 ORDER BY `article`.`date_publish` DESC LIMIT 6; args=(True,)
+2018-11-26 22:10:47,851 [Thread-4:6824] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag`; args=()
+2018-11-26 22:10:47,855 [Thread-4:6824] [django.server:124]             [basehttp:log_message] [INFO]- "GET /article/?id=16 HTTP/1.1" 200 29238
+2018-11-26 22:10:50,204 [Thread-5:9220] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-26 22:10:50,206 [Thread-5:9220] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `comment`.`article_id`, COUNT(`comment`.`article_id`) AS `comment_count` FROM `comment` GROUP BY `comment`.`article_id` ORDER BY `comment_count` DESC LIMIT 6; args=()
+2018-11-26 22:10:50,217 [Thread-5:9220] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2018-11-26 22:10:50,220 [Thread-5:9220] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 17; args=(17,)
+2018-11-26 22:10:50,223 [Thread-5:9220] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 15; args=(15,)
+2018-11-26 22:10:50,226 [Thread-5:9220] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-26 22:10:50,229 [Thread-5:9220] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 8; args=(8,)
+2018-11-26 22:10:50,232 [Thread-5:9220] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 5; args=(5,)
+2018-11-26 22:10:50,235 [Thread-5:9220] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 11; args=(11,)
+2018-11-26 22:10:50,238 [Thread-5:9220] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`date_publish` FROM `article` ORDER BY `article`.`date_publish` DESC; args=()
+2018-11-26 22:10:50,242 [Thread-5:9220] [django.server:124]             [basehttp:log_message] [INFO]- "GET /login HTTP/1.1" 200 1369
+2018-11-26 22:10:54,731 [Thread-6:6968] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-26 22:10:54,746 [Thread-6:6968] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2018-11-26 22:10:54,772 [Thread-6:6968] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`username` = 'admin'; args=('admin',)
+2018-11-26 22:10:54,912 [Thread-6:6968] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT (1) AS `a` FROM `django_session` WHERE `django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' LIMIT 1; args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2',)
+2018-11-26 22:10:54,938 [Thread-6:6968] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.023) INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES ('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', 'MGRkMTQ2ZTQ2MTQ2ODNkMDdkM2ExNTA3ZmNmMzBhMGZmZmJmNTA1YTp7fQ==', '2018-12-10 22:10:54.913831'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', 'MGRkMTQ2ZTQ2MTQ2ODNkMDdkM2ExNTA3ZmNmMzBhMGZmZmJmNTA1YTp7fQ==', '2018-12-10 22:10:54.913831')
+2018-11-26 22:10:55,108 [Thread-6:6968] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.043) UPDATE `user` SET `last_login` = '2018-11-26 22:10:55.064839' WHERE `user`.`id` = 1; args=('2018-11-26 22:10:55.064839', 1)
+2018-11-26 22:10:55,173 [Thread-6:6968] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.016) UPDATE `django_session` SET `session_data` = 'NGYxNTBhZWNlYjE4NzEwZmJjMGZlYWE5MzZlZWI1ODk4MGZlYTI2Yjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIwZTZhZDQ1OGMwNDFmYWU0ODcwNTIyZDE4OTExNGZlYjc4MDRkMGQ3In0=', `expire_date` = '2018-12-10 22:10:55.156845' WHERE `django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2'; args=('NGYxNTBhZWNlYjE4NzEwZmJjMGZlYWE5MzZlZWI1ODk4MGZlYTI2Yjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIwZTZhZDQ1OGMwNDFmYWU0ODcwNTIyZDE4OTExNGZlYjc4MDRkMGQ3In0=', '2018-12-10 22:10:55.156845', '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2')
+2018-11-26 22:10:55,257 [Thread-6:6968] [django.server:124]             [basehttp:log_message] [INFO]- "POST /login HTTP/1.1" 302 0
+2018-11-26 22:10:55,284 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-26 22:10:55,286 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2018-11-26 22:10:55,395 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-26 22:10:55,407 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`date_publish` > '2018-11-17 02:04:48.578168' ORDER BY `article`.`date_publish` ASC LIMIT 1; args=('2018-11-17 02:04:48.578168',)
+2018-11-26 22:10:55,411 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`date_publish` < '2018-11-17 02:04:48.578168' ORDER BY `article`.`date_publish` DESC LIMIT 1; args=('2018-11-17 02:04:48.578168',)
+2018-11-26 22:10:55,415 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' AND `django_session`.`expire_date` > '2018-11-26 22:10:55.412859'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', '2018-11-26 22:10:55.412859')
+2018-11-26 22:10:55,419 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-26 22:10:55,428 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.005) SELECT `comment`.`id`, `comment`.`content`, `comment`.`username`, `comment`.`email`, `comment`.`url`, `comment`.`date_publish`, `comment`.`user_id`, `comment`.`article_id`, `comment`.`pid_id` FROM `comment` WHERE `comment`.`article_id` = 16 ORDER BY `comment`.`date_publish` DESC; args=(16,)
+2018-11-26 22:10:55,442 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `comment`.`article_id`, COUNT(`comment`.`article_id`) AS `comment_count` FROM `comment` GROUP BY `comment`.`article_id` ORDER BY `comment_count` DESC LIMIT 6; args=()
+2018-11-26 22:10:55,446 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 17; args=(17,)
+2018-11-26 22:10:55,449 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 15; args=(15,)
+2018-11-26 22:10:55,452 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-26 22:10:55,457 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 8; args=(8,)
+2018-11-26 22:10:55,461 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 5; args=(5,)
+2018-11-26 22:10:55,463 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 11; args=(11,)
+2018-11-26 22:10:55,467 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`date_publish` FROM `article` ORDER BY `article`.`date_publish` DESC; args=()
+2018-11-26 22:10:55,481 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `category`.`id`, `category`.`name`, `category`.`index` FROM `category` ORDER BY `category`.`index` ASC, `category`.`id` ASC; args=()
+2018-11-26 22:10:55,493 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-26 22:10:55,497 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `category`.`id`, `category`.`name`, `category`.`index` FROM `category` WHERE `category`.`id` = 4; args=(4,)
+2018-11-26 22:10:55,501 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 16; args=(16,)
+2018-11-26 22:10:55,506 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT (1) AS `a` FROM `likes_like_record` WHERE (`likes_like_record`.`content_type_id` = 8 AND `likes_like_record`.`object_id` = 16 AND `likes_like_record`.`user_id` = 1) LIMIT 1; args=(8, 16, 1)
+2018-11-26 22:10:55,509 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `likes_likecount`.`id`, `likes_likecount`.`content_type_id`, `likes_likecount`.`object_id`, `likes_likecount`.`like_num` FROM `likes_likecount` WHERE (`likes_likecount`.`content_type_id` = 8 AND `likes_likecount`.`object_id` = 16); args=(8, 16)
+2018-11-26 22:10:55,511 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 16; args=(16,)
+2018-11-26 22:10:55,555 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`click_count` DESC LIMIT 6; args=()
+2018-11-26 22:10:55,561 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`is_recommend` = 1 ORDER BY `article`.`date_publish` DESC LIMIT 6; args=(True,)
+2018-11-26 22:10:55,572 [Thread-7:3600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag`; args=()
+2018-11-26 22:10:55,576 [Thread-7:3600] [django.server:124]             [basehttp:log_message] [INFO]- "GET /article/?id=16 HTTP/1.1" 200 30089
+2018-11-26 22:11:02,660 [Thread-8:7336] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-26 22:11:02,662 [Thread-8:7336] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2018-11-26 22:11:02,695 [Thread-8:7336] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' AND `django_session`.`expire_date` > '2018-11-26 22:11:02.592270'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', '2018-11-26 22:11:02.592270')
+2018-11-26 22:11:02,699 [Thread-8:7336] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-26 22:11:02,702 [Thread-8:7336] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) INSERT INTO `comment` (`content`, `username`, `email`, `url`, `date_publish`, `user_id`, `article_id`, `pid_id`) VALUES ('为', 'admin', NULL, NULL, '2018-11-26 22:11:02.701276', 1, 16, NULL); args=['为', 'admin', None, None, '2018-11-26 22:11:02.701276', 1, 16, None]
+2018-11-26 22:11:02,766 [Thread-8:7336] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) UPDATE `comment` SET `content` = '为', `username` = 'admin', `email` = NULL, `url` = NULL, `date_publish` = '2018-11-26 22:11:02.701276', `user_id` = 1, `article_id` = 16, `pid_id` = NULL WHERE `comment`.`id` = 229; args=('为', 'admin', '2018-11-26 22:11:02.701276', 1, 16, 229)
+2018-11-26 22:11:02,809 [Thread-8:7336] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 16; args=(16,)
+2018-11-26 22:11:02,811 [Thread-8:7336] [django.server:124]             [basehttp:log_message] [INFO]- "POST /comment_post/ HTTP/1.1" 200 135
+2018-11-27 09:07:01,201 [Dummy-1:9668] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-27 09:07:01,203 [Dummy-1:9668] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2018-11-27 09:07:03,202 [Dummy-1:9668] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.552) SHOW FULL TABLES; args=None
+2018-11-27 09:07:03,292 [Dummy-1:9668] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.050) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
