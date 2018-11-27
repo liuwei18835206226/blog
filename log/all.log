@@ -20425,3 +20425,1203 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [cid] in "<Quer
 2018-11-27 09:07:01,203 [Dummy-1:9668] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
 2018-11-27 09:07:03,202 [Dummy-1:9668] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.552) SHOW FULL TABLES; args=None
 2018-11-27 09:07:03,292 [Dummy-1:9668] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.050) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2018-11-27 09:10:39,646 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-27 09:10:39,647 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `article`; args=()
+2018-11-27 09:10:39,704 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `comment`.`article_id`, COUNT(`comment`.`article_id`) AS `comment_count` FROM `comment` GROUP BY `comment`.`article_id` ORDER BY `comment_count` DESC LIMIT 6; args=()
+2018-11-27 09:10:39,706 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2018-11-27 09:10:39,708 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 17; args=(17,)
+2018-11-27 09:10:39,710 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 15; args=(15,)
+2018-11-27 09:10:39,713 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-27 09:10:39,715 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 8; args=(8,)
+2018-11-27 09:10:39,728 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.005) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 5; args=(5,)
+2018-11-27 09:10:39,752 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 11; args=(11,)
+2018-11-27 09:10:39,759 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`date_publish` FROM `article` ORDER BY `article`.`date_publish` DESC; args=()
+2018-11-27 09:10:39,768 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' AND `django_session`.`expire_date` > '2018-11-27 09:10:39.765995'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', '2018-11-27 09:10:39.765995')
+2018-11-27 09:10:39,796 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.022) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-27 09:10:39,814 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `category`.`id`, `category`.`name`, `category`.`index` FROM `category` ORDER BY `category`.`index` ASC, `category`.`id` ASC; args=()
+2018-11-27 09:10:39,822 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.004) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`date_publish` DESC LIMIT 5; args=()
+2018-11-27 09:10:39,858 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 17; args=(17,)
+2018-11-27 09:10:40,383 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 17; args=(17,)
+2018-11-27 09:10:40,386 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 16; args=(16,)
+2018-11-27 09:10:40,388 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 16; args=(16,)
+2018-11-27 09:10:40,391 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 15; args=(15,)
+2018-11-27 09:10:40,394 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 15; args=(15,)
+2018-11-27 09:10:40,396 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 14; args=(14,)
+2018-11-27 09:10:40,399 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 14; args=(14,)
+2018-11-27 09:10:40,402 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 9; args=(9,)
+2018-11-27 09:10:40,413 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 9; args=(9,)
+2018-11-27 09:10:40,416 [Thread-2:10656] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'year' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'year'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [year] in '<QueryDict: {}>'
+2018-11-27 09:10:40,433 [Thread-2:10656] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'month' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'month'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [month] in '<QueryDict: {}>'
+2018-11-27 09:10:40,435 [Thread-2:10656] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'cid' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'cid'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [cid] in '<QueryDict: {}>'
+2018-11-27 09:10:40,473 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`click_count` DESC LIMIT 6; args=()
+2018-11-27 09:10:40,478 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`is_recommend` = 1 ORDER BY `article`.`date_publish` DESC LIMIT 6; args=(True,)
+2018-11-27 09:10:40,480 [Thread-2:10656] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT `tag`.`id`, `tag`.`name` FROM `tag`; args=()
+2018-11-27 09:10:40,484 [Thread-2:10656] [django.server:124]             [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 16385
+2018-11-27 09:10:40,536 [Thread-3:11656] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/myRewards.css HTTP/1.1" 304 0
+2018-11-27 09:10:40,632 [Thread-4:10444] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/base.css HTTP/1.1" 304 0
+2018-11-27 09:10:40,663 [Thread-5:11532] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/index.css HTTP/1.1" 304 0
+2018-11-27 09:10:42,150 [Thread-6:10584] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern archive ^archive/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern tagArticle ^tagArticle/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern article ^article/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern comment_post ^comment_post/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern logout ^logout$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern reg ^reg>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern login ^login>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern shuoshuo ^shuoshuo>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern blog ^blog>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern photos ^photos>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern message ^message>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern aboutme ^aboutme>], [<RegexURLResolver <module 'likes.urls' from 'D:\\pch\\python\\blog\\likes\\urls.py'> (None:None) ^>, <RegexURLPattern like_change ^like_change>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-11-27 09:10:42,253 [Thread-6:10584] [django.server:124]             [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 4373
+2018-11-27 09:10:52,964 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-27 09:10:52,965 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2018-11-27 09:10:53,145 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-27 09:10:53,226 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.078) UPDATE `article` SET `title` = 'test20181117', `desc` = 'desc01', `content` = '<span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span>', `click_count` = 41, `is_recommend` = 0, `date_publish` = '2018-11-17 02:04:48.578168', `user_id` = 1, `category_id` = 4 WHERE `article`.`id` = 16; args=('test20181117', 'desc01', '<span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span><span><strong>发斯蒂芬斯蒂芬斯蒂芬胜多负少的方式的范德萨</strong></span>', 41, False, '2018-11-17 02:04:48.578168', 1, 4, 16)
+2018-11-27 09:10:54,029 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.070) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`date_publish` > '2018-11-17 02:04:48.578168' ORDER BY `article`.`date_publish` ASC LIMIT 1; args=('2018-11-17 02:04:48.578168',)
+2018-11-27 09:10:54,031 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`date_publish` < '2018-11-17 02:04:48.578168' ORDER BY `article`.`date_publish` DESC LIMIT 1; args=('2018-11-17 02:04:48.578168',)
+2018-11-27 09:10:54,062 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.029) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' AND `django_session`.`expire_date` > '2018-11-27 09:10:54.032811'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', '2018-11-27 09:10:54.032811')
+2018-11-27 09:10:54,091 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.025) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-27 09:10:54,116 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.023) SELECT `comment`.`id`, `comment`.`content`, `comment`.`username`, `comment`.`email`, `comment`.`url`, `comment`.`date_publish`, `comment`.`user_id`, `comment`.`article_id`, `comment`.`pid_id` FROM `comment` WHERE `comment`.`article_id` = 16 ORDER BY `comment`.`date_publish` DESC; args=(16,)
+2018-11-27 09:10:54,163 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `comment`.`article_id`, COUNT(`comment`.`article_id`) AS `comment_count` FROM `comment` GROUP BY `comment`.`article_id` ORDER BY `comment_count` DESC LIMIT 6; args=()
+2018-11-27 09:10:54,167 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 17; args=(17,)
+2018-11-27 09:10:54,169 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 15; args=(15,)
+2018-11-27 09:10:54,172 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-27 09:10:54,176 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 8; args=(8,)
+2018-11-27 09:10:54,179 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 5; args=(5,)
+2018-11-27 09:10:54,186 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 11; args=(11,)
+2018-11-27 09:10:54,190 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`date_publish` FROM `article` ORDER BY `article`.`date_publish` DESC; args=()
+2018-11-27 09:10:54,231 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.025) SELECT `category`.`id`, `category`.`name`, `category`.`index` FROM `category` ORDER BY `category`.`index` ASC, `category`.`id` ASC; args=()
+2018-11-27 09:10:54,239 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.004) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-27 09:10:54,245 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `category`.`id`, `category`.`name`, `category`.`index` FROM `category` WHERE `category`.`id` = 4; args=(4,)
+2018-11-27 09:10:54,279 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.013) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 16; args=(16,)
+2018-11-27 09:10:54,297 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.015) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'myBlog' AND `django_content_type`.`model` = 'article'); args=('myBlog', 'article')
+2018-11-27 09:10:54,334 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.033) SELECT (1) AS `a` FROM `likes_like_record` WHERE (`likes_like_record`.`content_type_id` = 8 AND `likes_like_record`.`object_id` = 16 AND `likes_like_record`.`user_id` = 1) LIMIT 1; args=(8, 16, 1)
+2018-11-27 09:10:54,345 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `likes_likecount`.`id`, `likes_likecount`.`content_type_id`, `likes_likecount`.`object_id`, `likes_likecount`.`like_num` FROM `likes_likecount` WHERE (`likes_likecount`.`content_type_id` = 8 AND `likes_likecount`.`object_id` = 16); args=(8, 16)
+2018-11-27 09:10:54,349 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 16; args=(16,)
+2018-11-27 09:10:54,408 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`click_count` DESC LIMIT 6; args=()
+2018-11-27 09:10:54,414 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`is_recommend` = 1 ORDER BY `article`.`date_publish` DESC LIMIT 6; args=(True,)
+2018-11-27 09:10:54,423 [Thread-7:8760] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag`; args=()
+2018-11-27 09:10:54,428 [Thread-7:8760] [django.server:124]             [basehttp:log_message] [INFO]- "GET /article/?id=16 HTTP/1.1" 200 30540
+2018-11-27 09:10:56,775 [Thread-9:4312] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-27 09:10:56,777 [Thread-9:4312] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2018-11-27 09:10:56,794 [Thread-9:4312] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' AND `django_session`.`expire_date` > '2018-11-27 09:10:56.725965'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', '2018-11-27 09:10:56.725965')
+2018-11-27 09:10:56,798 [Thread-9:4312] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-27 09:10:56,830 [Thread-9:4312] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.031) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`model` = 'article'; args=('article',)
+2018-11-27 09:10:56,834 [Thread-9:4312] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-27 09:10:56,845 [Thread-9:4312] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.010) SELECT (1) AS `a` FROM `likes_like_record` WHERE (`likes_like_record`.`content_type_id` = 8 AND `likes_like_record`.`object_id` = 16 AND `likes_like_record`.`user_id` = 1) LIMIT 1; args=(8, 16, 1)
+2018-11-27 09:10:56,855 [Thread-9:4312] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `likes_like_record`.`id`, `likes_like_record`.`content_type_id`, `likes_like_record`.`object_id`, `likes_like_record`.`user_id`, `likes_like_record`.`like_time` FROM `likes_like_record` WHERE (`likes_like_record`.`content_type_id` = 8 AND `likes_like_record`.`object_id` = 16 AND `likes_like_record`.`user_id` = 1); args=(8, 16, 1)
+2018-11-27 09:10:56,937 [Thread-9:4312] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.080) DELETE FROM `likes_like_record` WHERE `likes_like_record`.`id` IN (1); args=(1,)
+2018-11-27 09:10:57,038 [Thread-9:4312] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `likes_likecount`.`id`, `likes_likecount`.`content_type_id`, `likes_likecount`.`object_id`, `likes_likecount`.`like_num` FROM `likes_likecount` WHERE (`likes_likecount`.`content_type_id` = 8 AND `likes_likecount`.`object_id` = 16); args=(8, 16)
+2018-11-27 09:10:57,045 [Thread-9:4312] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) UPDATE `likes_likecount` SET `content_type_id` = 8, `object_id` = 16, `like_num` = 1 WHERE `likes_likecount`.`id` = 1; args=(8, 16, 1, 1)
+2018-11-27 09:10:57,102 [Thread-9:4312] [django.server:124]             [basehttp:log_message] [INFO]- "GET /like_change?content_type=article&object_id=16&is_like=false&_=1543281054531 HTTP/1.1" 200 36
+2018-11-27 09:10:57,808 [Thread-10:10484] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-27 09:10:57,809 [Thread-10:10484] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2018-11-27 09:10:57,826 [Thread-10:10484] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' AND `django_session`.`expire_date` > '2018-11-27 09:10:57.773025'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', '2018-11-27 09:10:57.773025')
+2018-11-27 09:10:57,829 [Thread-10:10484] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-27 09:10:57,837 [Thread-10:10484] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`model` = 'article'; args=('article',)
+2018-11-27 09:10:57,839 [Thread-10:10484] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-27 09:10:57,842 [Thread-10:10484] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `likes_like_record`.`id`, `likes_like_record`.`content_type_id`, `likes_like_record`.`object_id`, `likes_like_record`.`user_id`, `likes_like_record`.`like_time` FROM `likes_like_record` WHERE (`likes_like_record`.`content_type_id` = 8 AND `likes_like_record`.`user_id` = 1 AND `likes_like_record`.`object_id` = 16); args=(8, 1, 16)
+2018-11-27 09:10:57,994 [Thread-10:10484] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.151) INSERT INTO `likes_like_record` (`content_type_id`, `object_id`, `user_id`, `like_time`) VALUES (8, 16, 1, '2018-11-27 09:10:57.843029'); args=[8, 16, 1, '2018-11-27 09:10:57.843029']
+2018-11-27 09:10:58,051 [Thread-10:10484] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `likes_likecount`.`id`, `likes_likecount`.`content_type_id`, `likes_likecount`.`object_id`, `likes_likecount`.`like_num` FROM `likes_likecount` WHERE (`likes_likecount`.`content_type_id` = 8 AND `likes_likecount`.`object_id` = 16); args=(8, 16)
+2018-11-27 09:10:58,055 [Thread-10:10484] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) UPDATE `likes_likecount` SET `content_type_id` = 8, `object_id` = 16, `like_num` = 2 WHERE `likes_likecount`.`id` = 1; args=(8, 16, 2, 1)
+2018-11-27 09:10:58,103 [Thread-10:10484] [django.server:124]             [basehttp:log_message] [INFO]- "GET /like_change?content_type=article&object_id=16&is_like=true&_=1543281054532 HTTP/1.1" 200 36
+2018-11-27 09:16:03,582 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.009) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-27 09:16:03,674 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.091) SELECT COUNT(*) AS `__count` FROM `article`; args=()
+2018-11-27 09:16:03,732 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.030) SELECT `comment`.`article_id`, COUNT(`comment`.`article_id`) AS `comment_count` FROM `comment` GROUP BY `comment`.`article_id` ORDER BY `comment_count` DESC LIMIT 6; args=()
+2018-11-27 09:16:03,735 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2018-11-27 09:16:03,750 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 17; args=(17,)
+2018-11-27 09:16:03,753 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 15; args=(15,)
+2018-11-27 09:16:03,760 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.006) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-27 09:16:03,762 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 8; args=(8,)
+2018-11-27 09:16:03,766 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 5; args=(5,)
+2018-11-27 09:16:03,768 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 11; args=(11,)
+2018-11-27 09:16:03,771 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`date_publish` FROM `article` ORDER BY `article`.`date_publish` DESC; args=()
+2018-11-27 09:16:03,808 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' AND `django_session`.`expire_date` > '2018-11-27 09:16:03.806529'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', '2018-11-27 09:16:03.806529')
+2018-11-27 09:16:03,856 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.045) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-27 09:16:03,901 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`date_publish` DESC LIMIT 5; args=()
+2018-11-27 09:16:03,948 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.023) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 17; args=(17,)
+2018-11-27 09:16:03,955 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.004) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 17; args=(17,)
+2018-11-27 09:16:04,013 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 16; args=(16,)
+2018-11-27 09:16:04,016 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 16; args=(16,)
+2018-11-27 09:16:04,020 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 15; args=(15,)
+2018-11-27 09:16:04,022 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 15; args=(15,)
+2018-11-27 09:16:04,028 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 14; args=(14,)
+2018-11-27 09:16:04,031 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 14; args=(14,)
+2018-11-27 09:16:04,034 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 9; args=(9,)
+2018-11-27 09:16:04,037 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 9; args=(9,)
+2018-11-27 09:16:04,054 [Thread-11:6176] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'year' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'year'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [year] in '<QueryDict: {}>'
+2018-11-27 09:16:04,057 [Thread-11:6176] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'month' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'month'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [month] in '<QueryDict: {}>'
+2018-11-27 09:16:04,060 [Thread-11:6176] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'cid' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'cid'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [cid] in '<QueryDict: {}>'
+2018-11-27 09:16:04,066 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`click_count` DESC LIMIT 6; args=()
+2018-11-27 09:16:04,072 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`is_recommend` = 1 ORDER BY `article`.`date_publish` DESC LIMIT 6; args=(True,)
+2018-11-27 09:16:04,074 [Thread-11:6176] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag`; args=()
+2018-11-27 09:16:04,078 [Thread-11:6176] [django.server:124]             [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 16144
+2018-11-27 09:16:04,747 [Thread-13:5836] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern archive ^archive/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern tagArticle ^tagArticle/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern article ^article/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern comment_post ^comment_post/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern logout ^logout$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern reg ^reg>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern login ^login>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern shuoshuo ^shuoshuo>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern blog ^blog>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern photos ^photos>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern message ^message>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern aboutme ^aboutme>], [<RegexURLResolver <module 'likes.urls' from 'D:\\pch\\python\\blog\\likes\\urls.py'> (None:None) ^>, <RegexURLPattern like_change ^like_change>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-11-27 09:16:04,762 [Thread-13:5836] [django.server:124]             [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 4373
+2018-11-27 09:16:06,150 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-27 09:16:06,167 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.016) SELECT COUNT(*) AS `__count` FROM `article`; args=()
+2018-11-27 09:16:06,216 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.046) SELECT `comment`.`article_id`, COUNT(`comment`.`article_id`) AS `comment_count` FROM `comment` GROUP BY `comment`.`article_id` ORDER BY `comment_count` DESC LIMIT 6; args=()
+2018-11-27 09:16:06,231 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.009) SELECT VERSION(); args=None
+2018-11-27 09:16:06,239 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.007) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 17; args=(17,)
+2018-11-27 09:16:06,242 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 15; args=(15,)
+2018-11-27 09:16:06,245 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-27 09:16:06,247 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 8; args=(8,)
+2018-11-27 09:16:06,249 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 5; args=(5,)
+2018-11-27 09:16:06,252 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 11; args=(11,)
+2018-11-27 09:16:06,260 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.006) SELECT `article`.`date_publish` FROM `article` ORDER BY `article`.`date_publish` DESC; args=()
+2018-11-27 09:16:06,284 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.013) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' AND `django_session`.`expire_date` > '2018-11-27 09:16:06.271670'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', '2018-11-27 09:16:06.271670')
+2018-11-27 09:16:06,289 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-27 09:16:06,303 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`date_publish` DESC LIMIT 5; args=()
+2018-11-27 09:16:06,333 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.029) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 17; args=(17,)
+2018-11-27 09:16:06,336 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 17; args=(17,)
+2018-11-27 09:16:06,339 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 16; args=(16,)
+2018-11-27 09:16:06,342 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 16; args=(16,)
+2018-11-27 09:16:06,345 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 15; args=(15,)
+2018-11-27 09:16:06,347 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 15; args=(15,)
+2018-11-27 09:16:06,349 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 14; args=(14,)
+2018-11-27 09:16:06,352 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 14; args=(14,)
+2018-11-27 09:16:06,355 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 9; args=(9,)
+2018-11-27 09:16:06,367 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 9; args=(9,)
+2018-11-27 09:16:06,369 [Thread-14:7924] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'year' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'year'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [year] in '<QueryDict: {}>'
+2018-11-27 09:16:06,373 [Thread-14:7924] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'month' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'month'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [month] in '<QueryDict: {}>'
+2018-11-27 09:16:06,376 [Thread-14:7924] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'cid' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'cid'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [cid] in '<QueryDict: {}>'
+2018-11-27 09:16:06,383 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`click_count` DESC LIMIT 6; args=()
+2018-11-27 09:16:06,388 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`is_recommend` = 1 ORDER BY `article`.`date_publish` DESC LIMIT 6; args=(True,)
+2018-11-27 09:16:06,392 [Thread-14:7924] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag`; args=()
+2018-11-27 09:16:06,395 [Thread-14:7924] [django.server:124]             [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 16144
+2018-11-27 09:16:06,602 [Thread-17:10624] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/index.css HTTP/1.1" 200 5019
+2018-11-27 09:16:06,632 [Thread-18:11708] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/all-2.0.1.css HTTP/1.1" 200 1370
+2018-11-27 09:16:06,642 [Thread-15:8824] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/myRewards.css HTTP/1.1" 200 3164
+2018-11-27 09:16:06,648 [Thread-19:11380] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/tctip.min.js HTTP/1.1" 200 7994
+2018-11-27 09:16:06,648 [Thread-16:10504] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/base.css HTTP/1.1" 200 10875
+2018-11-27 09:16:06,665 [Thread-20:10568] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 122612
+2018-11-27 09:16:06,714 [Thread-21:7224] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.css HTTP/1.1" 200 145631
+2018-11-27 09:16:06,746 [Thread-23:11480] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/sliders.js HTTP/1.1" 200 4515
+2018-11-27 09:16:06,802 [Thread-27:8940] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/nav.js HTTP/1.1" 200 220
+2018-11-27 09:16:06,836 [Thread-24:10836] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 36816
+2018-11-27 09:16:06,843 [Thread-22:5480] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 95786
+2018-11-27 09:16:06,919 [Thread-25:5440] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/ckeditor/ckeditor-init.js HTTP/1.1" 200 2039
+2018-11-27 09:16:07,240 [Thread-29:10020] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/a2.jpg HTTP/1.1" 200 571430
+2018-11-27 09:16:07,247 [Thread-28:11724] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/a1.jpg HTTP/1.1" 200 571430
+2018-11-27 09:16:07,300 [Thread-26:11460] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 690627
+2018-11-27 09:16:07,779 [Thread-30:10960] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/a3.jpg HTTP/1.1" 200 571430
+2018-11-27 09:16:07,793 [Thread-34:8144] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/ico_04_1.jpg HTTP/1.1" 200 5451
+2018-11-27 09:16:07,806 [Thread-32:10924] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+2018-11-27 09:16:07,813 [Thread-33:9988] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/ico_07_1.jpg HTTP/1.1" 200 5618
+2018-11-27 09:16:07,814 [Thread-31:4568] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/a4.jpg HTTP/1.1" 200 571430
+2018-11-27 09:16:07,829 [Thread-35:7672] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/newsbg02.png HTTP/1.1" 200 1418
+2018-11-27 09:16:07,940 [Thread-36:6428] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/ico_05_1.jpg HTTP/1.1" 200 6397
+2018-11-27 09:16:07,950 [Thread-37:10320] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/ico_06_1.jpg HTTP/1.1" 200 5493
+2018-11-27 09:16:07,963 [Thread-40:11348] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/newsbg01.png HTTP/1.1" 200 1243
+2018-11-27 09:16:07,964 [Thread-38:2700] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/newsbg03.png HTTP/1.1" 200 1254
+2018-11-27 09:16:07,965 [Thread-39:6096] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/newsbg04.png HTTP/1.1" 200 1298
+2018-11-27 09:16:07,981 [Thread-41:11412] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/ph2.png HTTP/1.1" 200 1591
+2018-11-27 09:16:07,999 [Thread-42:9972] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/slide-bg.png HTTP/1.1" 200 2792
+2018-11-27 09:16:08,142 [Thread-43:6288] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/datepng.png HTTP/1.1" 200 1204
+2018-11-27 09:16:08,167 [Thread-44:12224] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern archive ^archive/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern tagArticle ^tagArticle/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern article ^article/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern comment_post ^comment_post/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern logout ^logout$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern reg ^reg>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern login ^login>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern shuoshuo ^shuoshuo>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern blog ^blog>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern photos ^photos>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern message ^message>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern aboutme ^aboutme>], [<RegexURLResolver <module 'likes.urls' from 'D:\\pch\\python\\blog\\likes\\urls.py'> (None:None) ^>, <RegexURLPattern like_change ^like_change>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-11-27 09:16:08,177 [Thread-44:12224] [django.server:124]             [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 4373
+2018-11-27 09:49:31,480 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.031) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-27 09:49:31,938 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.457) SELECT COUNT(*) AS `__count` FROM `article`; args=()
+2018-11-27 09:49:32,741 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.798) SELECT `comment`.`article_id`, COUNT(`comment`.`article_id`) AS `comment_count` FROM `comment` GROUP BY `comment`.`article_id` ORDER BY `comment_count` DESC LIMIT 6; args=()
+2018-11-27 09:49:32,743 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2018-11-27 09:49:32,746 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 17; args=(17,)
+2018-11-27 09:49:32,752 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 15; args=(15,)
+2018-11-27 09:49:32,757 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-27 09:49:32,760 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 8; args=(8,)
+2018-11-27 09:49:32,762 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 5; args=(5,)
+2018-11-27 09:49:32,776 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 11; args=(11,)
+2018-11-27 09:49:32,778 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`date_publish` FROM `article` ORDER BY `article`.`date_publish` DESC; args=()
+2018-11-27 09:49:32,872 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.076) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' AND `django_session`.`expire_date` > '2018-11-27 09:49:32.791437'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', '2018-11-27 09:49:32.791437')
+2018-11-27 09:49:33,214 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.337) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-27 09:49:33,271 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.044) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`date_publish` DESC LIMIT 5; args=()
+2018-11-27 09:49:33,482 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-27 09:49:33,484 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.179) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 17; args=(17,)
+2018-11-27 09:49:33,493 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 17; args=(17,)
+2018-11-27 09:49:33,512 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 16; args=(16,)
+2018-11-27 09:49:33,515 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 16; args=(16,)
+2018-11-27 09:49:33,521 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 15; args=(15,)
+2018-11-27 09:49:33,528 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 15; args=(15,)
+2018-11-27 09:49:33,532 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 14; args=(14,)
+2018-11-27 09:49:33,543 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.004) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 14; args=(14,)
+2018-11-27 09:49:33,558 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 9; args=(9,)
+2018-11-27 09:49:33,561 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 9; args=(9,)
+2018-11-27 09:49:33,564 [Thread-45:9512] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'year' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'year'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [year] in '<QueryDict: {}>'
+2018-11-27 09:49:33,571 [Thread-45:9512] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'month' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'month'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [month] in '<QueryDict: {}>'
+2018-11-27 09:49:33,579 [Thread-45:9512] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'cid' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'cid'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [cid] in '<QueryDict: {}>'
+2018-11-27 09:49:33,670 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.081) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`click_count` DESC LIMIT 6; args=()
+2018-11-27 09:49:33,684 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.200) SELECT COUNT(*) AS `__count` FROM `article`; args=()
+2018-11-27 09:49:33,698 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.004) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`is_recommend` = 1 ORDER BY `article`.`date_publish` DESC LIMIT 6; args=(True,)
+2018-11-27 09:49:33,701 [Thread-45:9512] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag`; args=()
+2018-11-27 09:49:33,800 [Thread-45:9512] [django.server:124]             [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 16144
+2018-11-27 09:49:33,871 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.173) SELECT `comment`.`article_id`, COUNT(`comment`.`article_id`) AS `comment_count` FROM `comment` GROUP BY `comment`.`article_id` ORDER BY `comment_count` DESC LIMIT 6; args=()
+2018-11-27 09:49:33,881 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2018-11-27 09:49:33,883 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 17; args=(17,)
+2018-11-27 09:49:33,886 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 15; args=(15,)
+2018-11-27 09:49:33,891 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-27 09:49:33,909 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.015) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 8; args=(8,)
+2018-11-27 09:49:33,924 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 5; args=(5,)
+2018-11-27 09:49:34,076 [Thread-45:9512] [django.server:124]             [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 59
+2018-11-27 09:49:34,083 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.007) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 11; args=(11,)
+2018-11-27 09:49:34,089 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `article`.`date_publish` FROM `article` ORDER BY `article`.`date_publish` DESC; args=()
+2018-11-27 09:49:34,181 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.082) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' AND `django_session`.`expire_date` > '2018-11-27 09:49:34.098511'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', '2018-11-27 09:49:34.098511')
+2018-11-27 09:49:34,199 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.008) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-27 09:49:34,208 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`date_publish` DESC LIMIT 5; args=()
+2018-11-27 09:49:34,235 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.026) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 17; args=(17,)
+2018-11-27 09:49:34,239 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 17; args=(17,)
+2018-11-27 09:49:34,243 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 16; args=(16,)
+2018-11-27 09:49:34,245 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 16; args=(16,)
+2018-11-27 09:49:34,248 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 15; args=(15,)
+2018-11-27 09:49:34,250 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 15; args=(15,)
+2018-11-27 09:49:34,254 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 14; args=(14,)
+2018-11-27 09:49:34,257 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 14; args=(14,)
+2018-11-27 09:49:34,268 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 9; args=(9,)
+2018-11-27 09:49:34,272 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 9; args=(9,)
+2018-11-27 09:49:34,276 [Thread-46:11660] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'year' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'year'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [year] in '<QueryDict: {}>'
+2018-11-27 09:49:34,279 [Thread-46:11660] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'month' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'month'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [month] in '<QueryDict: {}>'
+2018-11-27 09:49:34,281 [Thread-46:11660] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'cid' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'cid'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [cid] in '<QueryDict: {}>'
+2018-11-27 09:49:34,288 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`click_count` DESC LIMIT 6; args=()
+2018-11-27 09:49:34,292 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`is_recommend` = 1 ORDER BY `article`.`date_publish` DESC LIMIT 6; args=(True,)
+2018-11-27 09:49:34,295 [Thread-46:11660] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag`; args=()
+2018-11-27 09:49:34,298 [Thread-46:11660] [django.server:124]             [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 16144
+2018-11-27 09:49:34,323 [Thread-47:10576] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/base.css HTTP/1.1" 200 10875
+2018-11-27 09:55:03,314 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-27 09:55:03,349 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.031) SELECT COUNT(*) AS `__count` FROM `article`; args=()
+2018-11-27 09:55:03,419 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.049) SELECT `comment`.`article_id`, COUNT(`comment`.`article_id`) AS `comment_count` FROM `comment` GROUP BY `comment`.`article_id` ORDER BY `comment_count` DESC LIMIT 6; args=()
+2018-11-27 09:55:03,421 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2018-11-27 09:55:03,423 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 17; args=(17,)
+2018-11-27 09:55:03,425 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 15; args=(15,)
+2018-11-27 09:55:03,428 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-27 09:55:03,433 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 8; args=(8,)
+2018-11-27 09:55:03,439 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 5; args=(5,)
+2018-11-27 09:55:03,453 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 11; args=(11,)
+2018-11-27 09:55:03,456 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`date_publish` FROM `article` ORDER BY `article`.`date_publish` DESC; args=()
+2018-11-27 09:55:03,467 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' AND `django_session`.`expire_date` > '2018-11-27 09:55:03.465350'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', '2018-11-27 09:55:03.465350')
+2018-11-27 09:55:03,512 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.043) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-27 09:55:03,526 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`date_publish` DESC LIMIT 5; args=()
+2018-11-27 09:55:03,567 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.039) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 17; args=(17,)
+2018-11-27 09:55:03,570 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 17; args=(17,)
+2018-11-27 09:55:03,573 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 16; args=(16,)
+2018-11-27 09:55:03,576 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 16; args=(16,)
+2018-11-27 09:55:03,579 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 15; args=(15,)
+2018-11-27 09:55:03,582 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 15; args=(15,)
+2018-11-27 09:55:03,586 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 14; args=(14,)
+2018-11-27 09:55:03,589 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 14; args=(14,)
+2018-11-27 09:55:03,591 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 9; args=(9,)
+2018-11-27 09:55:03,640 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 9; args=(9,)
+2018-11-27 09:55:03,643 [Thread-48:11136] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'year' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'year'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [year] in '<QueryDict: {}>'
+2018-11-27 09:55:03,650 [Thread-48:11136] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'month' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'month'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [month] in '<QueryDict: {}>'
+2018-11-27 09:55:03,654 [Thread-48:11136] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'cid' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'cid'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [cid] in '<QueryDict: {}>'
+2018-11-27 09:55:03,660 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`click_count` DESC LIMIT 6; args=()
+2018-11-27 09:55:03,668 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`is_recommend` = 1 ORDER BY `article`.`date_publish` DESC LIMIT 6; args=(True,)
+2018-11-27 09:55:03,670 [Thread-48:11136] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag`; args=()
+2018-11-27 09:55:03,673 [Thread-48:11136] [django.server:124]             [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 16144
+2018-11-27 09:55:03,699 [Thread-49:12156] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/base.css HTTP/1.1" 200 10761
+2018-11-27 09:55:06,379 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-11-27 09:55:06,405 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.025) SELECT COUNT(*) AS `__count` FROM `article`; args=()
+2018-11-27 09:55:06,421 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.010) SELECT `comment`.`article_id`, COUNT(`comment`.`article_id`) AS `comment_count` FROM `comment` GROUP BY `comment`.`article_id` ORDER BY `comment_count` DESC LIMIT 6; args=()
+2018-11-27 09:55:06,423 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2018-11-27 09:55:06,428 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 17; args=(17,)
+2018-11-27 09:55:06,441 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 15; args=(15,)
+2018-11-27 09:55:06,445 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 16; args=(16,)
+2018-11-27 09:55:06,448 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 8; args=(8,)
+2018-11-27 09:55:06,451 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 5; args=(5,)
+2018-11-27 09:55:06,454 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`id` = 11; args=(11,)
+2018-11-27 09:55:06,465 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.010) SELECT `article`.`date_publish` FROM `article` ORDER BY `article`.`date_publish` DESC; args=()
+2018-11-27 09:55:06,509 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.011) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2' AND `django_session`.`expire_date` > '2018-11-27 09:55:06.497523'); args=('5i0dfypxn3ocjjzo99v6lwzn4rvt2ea2', '2018-11-27 09:55:06.497523')
+2018-11-27 09:55:06,513 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`username`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`avatar`, `user`.`qq`, `user`.`mobile`, `user`.`url` FROM `user` WHERE `user`.`id` = 1; args=(1,)
+2018-11-27 09:55:06,519 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.002) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`date_publish` DESC LIMIT 5; args=()
+2018-11-27 09:55:06,544 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.024) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 17; args=(17,)
+2018-11-27 09:55:06,547 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 17; args=(17,)
+2018-11-27 09:55:06,550 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 16; args=(16,)
+2018-11-27 09:55:06,552 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 16; args=(16,)
+2018-11-27 09:55:06,555 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 15; args=(15,)
+2018-11-27 09:55:06,557 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 15; args=(15,)
+2018-11-27 09:55:06,560 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 14; args=(14,)
+2018-11-27 09:55:06,562 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 14; args=(14,)
+2018-11-27 09:55:06,565 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag` INNER JOIN `article_tag` ON (`tag`.`id` = `article_tag`.`tag_id`) WHERE `article_tag`.`article_id` = 9; args=(9,)
+2018-11-27 09:55:06,567 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.000) SELECT COUNT(*) AS `__count` FROM `comment` WHERE `comment`.`article_id` = 9; args=(9,)
+2018-11-27 09:55:06,581 [Thread-50:9600] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'year' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'year'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'year'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [year] in '<QueryDict: {}>'
+2018-11-27 09:55:06,584 [Thread-50:9600] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'month' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'month'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'month'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [month] in '<QueryDict: {}>'
+2018-11-27 09:55:06,588 [Thread-50:9600] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'cid' in template 'index.html'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\python365\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'cid'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'QueryDict' object has no attribute 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'cid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [cid] in '<QueryDict: {}>'
+2018-11-27 09:55:06,594 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.003) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` ORDER BY `article`.`click_count` DESC LIMIT 6; args=()
+2018-11-27 09:55:06,599 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `article`.`id`, `article`.`title`, `article`.`desc`, `article`.`content`, `article`.`click_count`, `article`.`is_recommend`, `article`.`date_publish`, `article`.`user_id`, `article`.`category_id` FROM `article` WHERE `article`.`is_recommend` = 1 ORDER BY `article`.`date_publish` DESC LIMIT 6; args=(True,)
+2018-11-27 09:55:06,602 [Thread-50:9600] [django.db.backends:91]             [utils:execute] [DEBUG]- (0.001) SELECT `tag`.`id`, `tag`.`name` FROM `tag`; args=()
+2018-11-27 09:55:06,605 [Thread-50:9600] [django.server:124]             [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 16144
+2018-11-27 09:55:06,630 [Thread-51:4464] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/myRewards.css HTTP/1.1" 200 3164
+2018-11-27 09:55:06,659 [Thread-52:12212] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/base.css HTTP/1.1" 200 10761
+2018-11-27 09:55:06,662 [Thread-53:10020] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/index.css HTTP/1.1" 200 5019
+2018-11-27 09:55:06,662 [Thread-54:7760] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/all-2.0.1.css HTTP/1.1" 200 1370
+2018-11-27 09:55:06,688 [Thread-55:10652] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 122612
+2018-11-27 09:55:06,705 [Thread-56:4312] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.css HTTP/1.1" 200 145631
+2018-11-27 09:55:06,706 [Thread-57:9936] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/tctip.min.js HTTP/1.1" 200 7994
+2018-11-27 09:55:06,709 [Thread-59:2952] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/sliders.js HTTP/1.1" 200 4515
+2018-11-27 09:55:06,723 [Thread-61:11084] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/ckeditor/ckeditor-init.js HTTP/1.1" 200 2039
+2018-11-27 09:55:06,732 [Thread-58:9732] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 95786
+2018-11-27 09:55:06,742 [Thread-60:7316] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 36816
+2018-11-27 09:55:06,756 [Thread-63:6748] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/nav.js HTTP/1.1" 200 220
+2018-11-27 09:55:06,803 [Thread-64:10640] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/a1.jpg HTTP/1.1" 200 571430
+2018-11-27 09:55:06,822 [Thread-62:11636] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/js/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 690627
+2018-11-27 09:55:06,842 [Thread-65:11176] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/a2.jpg HTTP/1.1" 200 571430
+2018-11-27 09:55:06,899 [Thread-67:12044] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/a4.jpg HTTP/1.1" 200 571430
+2018-11-27 09:55:06,908 [Thread-66:8532] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/a3.jpg HTTP/1.1" 200 571430
+2018-11-27 09:55:07,014 [Thread-68:9312] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/slide-bg.png HTTP/1.1" 200 2792
+2018-11-27 09:55:07,052 [Thread-69:11332] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+2018-11-27 09:55:07,073 [Thread-71:5256] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/ico_04_1.jpg HTTP/1.1" 200 5451
+2018-11-27 09:55:07,074 [Thread-70:5460] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/ico_07_1.jpg HTTP/1.1" 200 5618
+2018-11-27 09:55:07,084 [Thread-72:12152] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/ico_06_1.jpg HTTP/1.1" 200 5493
+2018-11-27 09:55:07,086 [Thread-73:11828] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/ico_05_1.jpg HTTP/1.1" 200 6397
+2018-11-27 09:55:07,097 [Thread-74:10500] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/newsbg03.png HTTP/1.1" 200 1254
+2018-11-27 09:55:07,115 [Thread-76:9576] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/newsbg01.png HTTP/1.1" 200 1243
+2018-11-27 09:55:07,134 [Thread-77:11448] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/newsbg04.png HTTP/1.1" 200 1298
+2018-11-27 09:55:07,150 [Thread-75:11864] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/newsbg02.png HTTP/1.1" 200 1418
+2018-11-27 09:55:07,156 [Thread-78:2948] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/datepng.png HTTP/1.1" 200 1204
+2018-11-27 09:55:07,157 [Thread-79:10400] [django.server:124]             [basehttp:log_message] [INFO]- "GET /static/images/ph2.png HTTP/1.1" 200 1591
+2018-11-27 09:55:07,224 [Thread-80:11808] [django.template:925]             [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\python365\lib\site-packages\django\urls\resolvers.py", line 392, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern archive ^archive/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern tagArticle ^tagArticle/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern article ^article/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern comment_post ^comment_post/$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern logout ^logout$>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern reg ^reg>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern login ^login>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern shuoshuo ^shuoshuo>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern blog ^blog>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern photos ^photos>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern message ^message>], [<RegexURLResolver <module 'myBlog.urls' from 'D:\\pch\\python\\blog\\myBlog\\urls.py'> (None:None) ^>, <RegexURLPattern aboutme ^aboutme>], [<RegexURLResolver <module 'likes.urls' from 'D:\\pch\\python\\blog\\likes\\urls.py'> (None:None) ^>, <RegexURLPattern like_change ^like_change>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2018-11-27 09:55:07,240 [Thread-80:11808] [django.server:124]             [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 4373

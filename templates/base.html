@@ -35,6 +35,7 @@
       <p>{{ SITE_DESC }}</p>
   </div>
   <div class="log_reg">
+  <div class="log_reg_info">
       {% if request.user.is_authenticated %}
           <div id="hello">您好&nbsp<b>{{ request.user.username }}</b>&nbsp;&nbsp;<a href="{% url 'logout' %}" style="color:#0000E3">注销</a></div>
       {% else %}
@@ -42,17 +43,19 @@
           <a href="{% url 'reg' %}">注册</a>
       {% endif %}
   </div>
-
-<!--搜索框-->
-  <div class="logo_a">
-      <form action="#" class="navbar-form navbar-right">
+  <!--搜索框-->
+     <div class="logo_a">
+        <form action="#" class="navbar-form navbar-right">
           {% csrf_token %}
-        <input name="wd" type="text" placeholder="搜索文章" class="form-control">
-        <button type="submit">
+          <input name="wd" type="text" placeholder="搜索文章" class="form-control">
+          <button type="submit">
             <span class="glyphicon glyphicon-search"></span>
-        </button>
-      </form>
+          </button>
+        </form>
+     </div>
   </div>
+
+
   <ul>
     <a href="{% url 'index' %}" target="_self">首页</a>  <!-- -blank 在新窗口打开-->
     <a href="{% url 'shuoshuo' %}" target="_self">说说</a>
