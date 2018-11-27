@@ -4,6 +4,17 @@
 
 {% block left_content %}
 
+<div class='login_info'>
+    <form id="comment_form" action="{% url 'comment_post' %}" method="post">
+        {% csrf_token %}
+        <p hidden>{{ comment_form.author }}</p>
+        <p>{{ comment_form.text }}</p>
+        <span id="comment_error" class="text-danger pull-left" ></span>
+        <p hidden>{{ comment_form.article }}</p>
+        <input type="submit" value="提交评论" class="btn btn-primary pull-right"/>
+    </form>
+</div>
+
 <div id="comment_area">
         <ol class="commentlist" id="commentlist" >
               {% for comment in comment_list %}

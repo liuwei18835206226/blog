@@ -270,10 +270,14 @@ def comment(request):
             return render(request,'failure.html',{'reason':'没有找到相应的文章'})
 
         # 评论表单
-        comment_form = CommentForm({'author': request.user.username,
-                                    # 'email': request.user.email,
-                                    # 'url': request.user.url,
-                                    'article':id} if request.user.is_authenticated() else{'article':id})
+        comment_form = CommentForm(request.POST)
+        # comment_form = CommentForm({'username': request.user.author,
+        #                             # 'email': request.user.email,
+        #                             # 'url': request.user.url,
+        #                             'content':request.user.text,
+        #                             'article':id,
+        #                             'user': request.user.username} if request.user.is_authenticated() else{'article':id},
+        #                            )
 
         # 获取评论信息
         comments = Comment.objects.filter(article=article)
@@ -287,7 +291,6 @@ def comment(request):
                     break
             if comment.pid is None:
                 comment_list.append(comment)
-
     except Exception as e:
         # logger.error(e)
         pass
