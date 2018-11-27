@@ -71,7 +71,7 @@ _margin-bottom: 15px; }/*½â¾öIE6ÏÂ²»¼æÈÝ position:fixed µÄÎÊÌâ
 .logo{ margin-bottom:10px; margin-left:20px;padding-left:10px; width:50%; height:50px;display:inline-block; float:left; color:#000; font-family:'YouYuan'}
 .logo_a{margin-top:30px; height:40px; display:inline-block; float:right;}
 .log_reg{ margin-top:5px; padding-right:20px; width:280px; height:120px; display:inline-block;float: right;}
-.log_reg a{color: #FFFFFF;}
+.log_reg_info a{color: #FFFFFF;}
 .log_reg_info{ margin-top:5px; padding-right:12px; display:inline-block; float: right;}
 .log_reg #hello{color:#FFFFFF}
 .logo h1{ font-size:33px; font-weight:bold; height:20px; color: #f0f0f0;}
