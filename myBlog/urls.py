@@ -15,7 +15,7 @@ urlpatterns = [
     url(r'^photos', photos, name='photos'),
     url(r'^message', message, name='message'),
     url(r'^aboutme', aboutme, name='aboutme'),
-    url(r'^comment/$', comment, name='comment'),
+    # url(r'^comment/$', comment, name='comment'),
 ]
 
 

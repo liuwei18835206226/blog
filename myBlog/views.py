@@ -120,10 +120,7 @@ def article(request):
             return render(request,'failure.html',{'reason':'没有找到相应的文章'})
 
         # 评论表单
-        comment_form = CommentForm({'author': request.user.username,
-                                    # 'email': request.user.email,
-                                    # 'url': request.user.url,
-                                    'article':id} if request.user.is_authenticated() else{'article':id})
+        comment_form = CommentForm(request.POST)
 
         # 获取评论信息
         comments = Comment.objects.filter(article=article)
@@ -253,7 +250,7 @@ def message(request):
 def aboutme(request):
     return render(request,'myBlog/aboutme.html')
 
-
+'''
 def comment(request):
     try:
         # 获取文章id
@@ -297,5 +294,5 @@ def comment(request):
     response = render(request,'comment.html',locals())
     response.set_cookie('click_count_%s' % id ,'true',max_age=600)  # set_cookie(key,value,max_age) max_age单位为s ，不设置的话，默认关闭浏览器cookie失效
     return response
-
+'''
 
