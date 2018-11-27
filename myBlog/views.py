@@ -120,7 +120,9 @@ def article(request):
             return render(request,'failure.html',{'reason':'没有找到相应的文章'})
 
         # 评论表单
-        comment_form = CommentForm(request.POST)
+        comment_form = CommentForm({'author': request.user.username,
+                                    'article': id
+                                    })
 
         # 获取评论信息
         comments = Comment.objects.filter(article=article)
