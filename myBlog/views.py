@@ -254,6 +254,45 @@ def aboutme(request):
     return render(request,'myBlog/aboutme.html')
 
 
+def comment(request):
+    try:
+        # 获取文章id
+        id = request.GET.get('id',None)
+        try:
+            # 获取文章信息
+            article = Article.objects.get(pk=id)
+            if not request.COOKIES.get('click_count_%s' % id): # 获取 cookie，看cookie中是否有此文章的阅读信息，如果没有，+1
+                article.click_count += 1    # 记录阅读数
+                article.save()
+            previous_article = Article.objects.filter(date_publish__gt=article.date_publish).last() # 筛选发布日期大于当前请求日期的文章，并选出最后一个
+            next_article = Article.objects.filter(date_publish__lt=article.date_publish).first() # 筛选发布日期小于当前请求日期的文章，并选出第一个
+        except Article.DoesNotExist:
+            return render(request,'failure.html',{'reason':'没有找到相应的文章'})
 
+        # 评论表单
+        comment_form = CommentForm({'author': request.user.username,
+                                    # 'email': request.user.email,
+                                    # 'url': request.user.url,
+                                    'article':id} if request.user.is_authenticated() else{'article':id})
+
+        # 获取评论信息
+        comments = Comment.objects.filter(article=article)
+        comment_list = []
+        for comment in comments:
+            for item in comment_list:
+                if not hasattr(item,'children_comment'):
+                    setattr(item,'children_comment',[])
+                if comment.pid == item:
+                    item.children_comment.append(comment)
+                    break
+            if comment.pid is None:
+                comment_list.append(comment)
+
+    except Exception as e:
+        # logger.error(e)
+        pass
+    response = render(request,'comment.html',locals())
+    response.set_cookie('click_count_%s' % id ,'true',max_age=600)  # set_cookie(key,value,max_age) max_age单位为s ，不设置的话，默认关闭浏览器cookie失效
+    return response
 
 

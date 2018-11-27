@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block left_content %}
+
+<div id="comment_area">
+        <ol class="commentlist" id="commentlist" >
+              {% for comment in comment_list %}
+              <li id="comment-59418">
+                <div id="top" class="top"> {{ comment.username }} <span class="time"> < {{ comment.date_publish | date:'Y-m-d H:i:s' }} > </span></div>
+                <div class="body">
+                    <p>{{ comment.content|safe }}</p>
+                </div>
+              </li>
+              {% empty %}
+                <span id="no_comment">暂无评论~</span>
+              {% endfor %}
+        </ol>
+    </div>
+
+{% endblock left_content %}

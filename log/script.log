@@ -12022,3 +12022,5 @@ Traceback (most recent call last):
     return ErrorResponse(data)
 TypeError: ErrorResponse() missing 1 required positional argument: 'message'
 2018-11-27 11:53:02,780 [Thread-6:11588] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-27 16:10:47,957 [Thread-46:10500] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-27 16:11:15,431 [Thread-57:10856] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
