@@ -121,7 +121,8 @@ def article(request):
 
         # 评论表单
         comment_form = CommentForm({'author': request.user.username,
-                                    'article': id
+                                    'article': id,
+                                    'user':request.user
                                     })
 
         # 获取评论信息

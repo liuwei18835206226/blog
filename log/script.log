@@ -12054,3 +12054,36 @@ Traceback (most recent call last):
     response = render(request,'comment.html',locals(),comment_list)
 UnboundLocalError: local variable 'comment_list' referenced before assignment
 2018-11-27 18:14:19,939 [Thread-25:13020] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-27 23:27:04,160 [Thread-5:12344] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 165, in comment_post
+    data['username'] = comment.user.username
+AttributeError: 'NoneType' object has no attribute 'username'
+2018-11-27 23:27:11,728 [Thread-6:4612] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 165, in comment_post
+    data['username'] = comment.user.username
+AttributeError: 'NoneType' object has no attribute 'username'
+2018-11-27 23:29:02,304 [Thread-5:6232] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 166, in comment_post
+    data['username'] = comment.user.username
+AttributeError: 'NoneType' object has no attribute 'username'
