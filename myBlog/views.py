@@ -244,7 +244,8 @@ def do_logout(request):
 def shuoshuo(request):
     return render(request,'myBlog/shuoshuo.html')
 def blog(request):
-    return render(request,'myBlog/blog.html')
+    article_list = getPage(request, Article.objects.all())
+    return render(request,'myBlog/blog.html',locals())
 def photos(request):
     return render(request,'myBlog/photos.html')
 def message(request):

@@ -19,8 +19,8 @@ header { width: 1000px; margin: 20px auto; overflow: hidden; clear: both; }
 #topnav { width: 100%; background: #4C81C9; height: 130px; line-height: 46px; text-align: left; border-radius: 20px; }
 #topnav ul{ margin-left:10px;margin-top:90px; }
 #topnav ul a { display: inline-block; font-size: 18px; font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif; padding: 0 20px; }
-#topnav ul a:hover { background: #fff; opacity: 0.3; color: #000; transition: all 0.4s ease-in-out 0s; font-weight:bold;}
-#topnav ul a { color: #FFF }
+#topnav ul a:hover { border-radius: 20px;background: #fff; opacity: 0.3; color: #000; transition: all 0.4s ease-in-out 0s; font-weight:bold;}
+#topnav ul a { color: #FFF; }
 #topnav_current { background: #F3FF41; }/* ¸ßÁÁÑ¡ÖÐÑÕÉ« */
 a#topnav_current { color: #000 }
 article { width: 1000px; margin: 20px auto; }

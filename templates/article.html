@@ -81,14 +81,10 @@
               {% for comment in comment_list %}
               <li id="comment-59418">
                 <div id="top" class="top"> {{ comment.username }} <span class="time"> < {{ comment.date_publish | date:'Y-m-d H:i:s' }} > </span></div>
-                <!--<div><img alt='' src='{% static "images/default.jpg" %}' class='avatar avatar-32 photo' height='32' width='32' /></div>-->
                 <div class="body">
                     <p>{{ comment.content|safe }}</p>
                 </div>
               </li>
-                  <!--
-
-                  -->
               {% empty %}
                 <span id="no_comment">暂无评论~</span>
               {% endfor %}
