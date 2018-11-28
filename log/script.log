@@ -12361,3 +12361,5 @@ Traceback (most recent call last):
   File "D:\pch\python\blog\myBlog\views.py", line 167, in comment_post
     data['username'] = comment.user.username
 AttributeError: 'NoneType' object has no attribute 'username'
+2018-11-28 17:41:30,580 [Thread-17:6440] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-28 17:42:10,028 [Thread-5:4632] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png

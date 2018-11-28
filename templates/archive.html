@@ -4,7 +4,7 @@
 {% block left_content %}
 
 <div class="l_box f_l">
-    {% include 'ad.html' %}  等同于 block 的用法
+    {% include 'ad.html' %}  <!--等同于 block 的用法-->
     <div class="topnews">
           <h2>{{ request.GET.year }}-{{ request.GET.month }} &nbsp 归档文章</h2>
         {% for article in article_list %}

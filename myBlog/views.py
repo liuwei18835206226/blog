@@ -138,7 +138,6 @@ def article(request):
                     break
             if comment.pid is None:
                 comment_list.append(comment)
-        comment_list = getPage(request,comment_list)
     except Exception as e:
         # logger.error(e)
         pass
