@@ -164,7 +164,7 @@ def comment_post(request):
 
             # 返回数据
             data['status'] = 'SUCCESS'
-            # data['username'] = comment.user.username
+            data['username'] = comment.username
             data['comment_time'] = comment.date_publish.strftime('%Y-%m-%d %H:%M:%S')
             data['text'] = comment.content
             data['message'] = ''
