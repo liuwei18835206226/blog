@@ -124,8 +124,8 @@ def article(request):
         #                             # 'article': id,
         #                             # 'user':request.user
         #                             })
-        # comment_form = CommentForm(initial={'author': request.user.username,'article': id})
-        comment_form = CommentForm({'article': id})
+        comment_form = CommentForm(initial={'author': request.user.username,'article': id})
+        # comment_form = CommentForm()
         # 获取评论信息
         comments = Comment.objects.filter(article=article)
         comment_list = []
@@ -147,19 +147,19 @@ def article(request):
     return response
 
 # 提交评论
-# 如果此处安全性无关紧要，可取消 csrf 验证,去掉 html里的{% csrf_token %},此处加个装饰器 @csrf_exemp
+# 如果此处安全性无关紧要，可取消 csrf 验证,去掉 html里的{% csrf_token %},此处加个装饰器 @csrf_exempt，需导入 from django.views.decorators.csrf import csrf_exempt
 def comment_post(request):
     # try:
         comment_form = CommentForm(request.POST)
         data = {} # 记录返回数据
         if comment_form.is_valid():
             #获取表单信息
-            comment = Comment.objects.create(# username=comment_form.cleaned_data["author"],
+            comment = Comment.objects.create(username=comment_form.cleaned_data["author"],
                                              # email=comment_form.cleaned_data["email"],
                                              # url=comment_form.cleaned_data["url"],
                                              content=comment_form.cleaned_data["text"],
-                                             article_id=comment_form.cleaned_data["article"],
-                                             user=request.user if request.user.is_authenticated() else None)    # 判断是否已经登录
+                                             article_id=comment_form.cleaned_data["article"])
+                                             # user=request.user if request.user.is_authenticated() else None)    # 判断是否已经登录
             comment.save()
 
             # 返回数据

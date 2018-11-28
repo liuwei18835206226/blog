@@ -64,7 +64,7 @@
         <div class='login_info'>
             <form id="comment_form" action="{% url 'comment_post' %}" method="post">
                 {% csrf_token %}
-                <!--<p hidden>{{ comment_form.author }}</p>-->
+                <p hidden>{{ comment_form.author }}</p>
                 <p>{{ comment_form.text }}</p>
                 <span id="comment_error" class="text-danger pull-left" ></span>
                 <p hidden>{{ comment_form.article }}</p>
@@ -115,7 +115,7 @@
                 url:{% url 'comment_post' %},
                 type:'POST',
                 data:$(this).serialize(),
-                cache:false,
+                cache:true,
                 success:function(data){
                     console.log(data);
                     if(data['status']=="SUCCESS"){
@@ -124,7 +124,7 @@
                                               '<li id="comment-59418">'
                                              +'<div id="top" class="top">'
                                              +'<span class="time">'
-                                             //+data['username']
+                                             +data['username']
                                              +'<'
                                              +data['comment_time']
                                              +'>'
