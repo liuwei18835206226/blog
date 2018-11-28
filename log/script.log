@@ -12087,3 +12087,244 @@ Traceback (most recent call last):
   File "D:\pch\python\blog\myBlog\views.py", line 166, in comment_post
     data['username'] = comment.user.username
 AttributeError: 'NoneType' object has no attribute 'username'
+2018-11-28 12:34:49,597 [Thread-6:7204] [django.request:152]             [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-11-28 12:54:55,005 [Thread-74:7848] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 736, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\pch\python\blog\myBlog\templatetags\myfilter.py", line 7, in month_to_upper
+    return ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二'][key.month-1]
+AttributeError: 'str' object has no attribute 'month'
+2018-11-28 12:55:15,006 [Thread-78:1380] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 736, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\pch\python\blog\myBlog\templatetags\myfilter.py", line 7, in month_to_upper
+    return ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二'][key.month-1]
+AttributeError: 'str' object has no attribute 'month'
+2018-11-28 12:55:39,854 [Thread-80:6652] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 736, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\pch\python\blog\myBlog\templatetags\myfilter.py", line 7, in month_to_upper
+    return ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二'][key.month-1]
+AttributeError: 'str' object has no attribute 'month'
+2018-11-28 12:55:44,790 [Thread-82:8004] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 736, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\pch\python\blog\myBlog\templatetags\myfilter.py", line 7, in month_to_upper
+    return ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二'][key.month-1]
+AttributeError: 'str' object has no attribute 'month'
+2018-11-28 12:57:05,071 [Thread-85:6888] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 144, in article
+    response = render(request,'article.html',locals())
+  File "C:\python365\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\python365\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\python365\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\python365\lib\site-packages\django\template\base.py", line 736, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "D:\pch\python\blog\myBlog\templatetags\myfilter.py", line 7, in month_to_upper
+    return ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二'][key.month-1]
+AttributeError: 'str' object has no attribute 'month'
+2018-11-28 12:57:52,176 [Thread-94:6612] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-28 13:01:21,019 [Thread-4:7808] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-28 13:01:25,103 [Thread-5:7636] [django.request:135]             [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post/
+Traceback (most recent call last):
+  File "C:\python365\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\python365\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\pch\python\blog\myBlog\views.py", line 166, in comment_post
+    data['username'] = comment.user.username
+AttributeError: 'NoneType' object has no attribute 'username'
+2018-11-28 13:02:25,360 [Thread-5:7704] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png
+2018-11-28 13:02:52,817 [Thread-16:7968] [django.request:152]             [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2018/10/c250cbd0-cdf2-11e8-bffb-a8a3cf7fce94.png

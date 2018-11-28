@@ -35,8 +35,8 @@
 
     <div class="like" onclick="likeChange(this,'article',{{ article.pk }})">
         <span class="glyphicon glyphicon-thumbs-up {% get_like_status article %}"></span>
-        <span class="like_num">{% get_like_count article %}</span>
         <span>赞</span>
+        <span class="like_num">({% get_like_count article %})</span>
     </div>
 
     <div class="article-more">
@@ -64,7 +64,7 @@
         <div class='login_info'>
             <form id="comment_form" action="{% url 'comment_post' %}" method="post">
                 {% csrf_token %}
-                <p hidden>{{ comment_form.author }}</p>
+                <!--<p hidden>{{ comment_form.author }}</p>-->
                 <p>{{ comment_form.text }}</p>
                 <span id="comment_error" class="text-danger pull-left" ></span>
                 <p hidden>{{ comment_form.article }}</p>
@@ -90,11 +90,12 @@
               {% endfor %}
         </ol>
     </div>
+
 </div>
 {% endblock left_content %}
 
 
-<!--异步提交评论-->
+<!--异步提交评论，刷新点赞-->
 {% block script_comment %}
     <script type="text/javascript">
         $("#comment_form").submit(function(){
@@ -123,7 +124,7 @@
                                               '<li id="comment-59418">'
                                              +'<div id="top" class="top">'
                                              +'<span class="time">'
-                                             +data['username']
+                                             //+data['username']
                                              +'<'
                                              +data['comment_time']
                                              +'>'
@@ -172,7 +173,7 @@
                         }
                         // 更新点赞数量
                         var like_num = $(obj.getElementsByClassName('like_num'));
-                        like_num.text(data['like_num'])
+                        like_num.text('('+data['like_num']+')')
                     }else{
                         alert(data['message']);
                     }

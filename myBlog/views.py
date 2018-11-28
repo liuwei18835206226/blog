@@ -124,7 +124,8 @@ def article(request):
         #                             # 'article': id,
         #                             # 'user':request.user
         #                             })
-        comment_form = CommentForm(initial={'author': request.user.username,'article': id})
+        # comment_form = CommentForm(initial={'author': request.user.username,'article': id})
+        comment_form = CommentForm({'article': id})
         # 获取评论信息
         comments = Comment.objects.filter(article=article)
         comment_list = []
@@ -137,7 +138,7 @@ def article(request):
                     break
             if comment.pid is None:
                 comment_list.append(comment)
-
+        comment_list = getPage(request,comment_list)
     except Exception as e:
         # logger.error(e)
         pass
@@ -153,7 +154,7 @@ def comment_post(request):
         data = {} # 记录返回数据
         if comment_form.is_valid():
             #获取表单信息
-            comment = Comment.objects.create(username=comment_form.cleaned_data["author"],
+            comment = Comment.objects.create(# username=comment_form.cleaned_data["author"],
                                              # email=comment_form.cleaned_data["email"],
                                              # url=comment_form.cleaned_data["url"],
                                              content=comment_form.cleaned_data["text"],
@@ -163,7 +164,7 @@ def comment_post(request):
 
             # 返回数据
             data['status'] = 'SUCCESS'
-            data['username'] = comment.user.username
+            # data['username'] = comment.user.username
             data['comment_time'] = comment.date_publish.strftime('%Y-%m-%d %H:%M:%S')
             data['text'] = comment.content
             data['message'] = ''
